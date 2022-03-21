@@ -1,0 +1,2193 @@
+fileFormatVersion: 2
+guid: 2573ac29bb1c4f5488355a7c3728324d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4635682285510260054
+    second: First Asset pack_0
+  - first:
+      213: -8955989881456161296
+    second: First Asset pack_1
+  - first:
+      213: -7905424314582090560
+    second: First Asset pack_2
+  - first:
+      213: -6498024855133280392
+    second: First Asset pack_3
+  - first:
+      213: 3647872620889847744
+    second: First Asset pack_4
+  - first:
+      213: 1603238771598124081
+    second: First Asset pack_5
+  - first:
+      213: -3467316236647503110
+    second: First Asset pack_6
+  - first:
+      213: -6140216523436870760
+    second: First Asset pack_7
+  - first:
+      213: -1747590518431177268
+    second: First Asset pack_8
+  - first:
+      213: 7259441721842621191
+    second: First Asset pack_9
+  - first:
+      213: -2540326973299363085
+    second: First Asset pack_10
+  - first:
+      213: -1680587756725953608
+    second: First Asset pack_11
+  - first:
+      213: 5660252129397629680
+    second: First Asset pack_12
+  - first:
+      213: 3242799718470642475
+    second: First Asset pack_13
+  - first:
+      213: -8879688219362438816
+    second: First Asset pack_14
+  - first:
+      213: -9038659470070497423
+    second: First Asset pack_15
+  - first:
+      213: -170779123951877861
+    second: First Asset pack_16
+  - first:
+      213: 4116147641160895590
+    second: First Asset pack_17
+  - first:
+      213: 7034764701744924078
+    second: First Asset pack_18
+  - first:
+      213: 7959154913729419554
+    second: First Asset pack_19
+  - first:
+      213: 6606018922332637150
+    second: First Asset pack_20
+  - first:
+      213: 6798183092280629490
+    second: First Asset pack_21
+  - first:
+      213: 3660255075706844153
+    second: First Asset pack_22
+  - first:
+      213: -8260133864841022463
+    second: First Asset pack_23
+  - first:
+      213: 1995551203899477267
+    second: First Asset pack_24
+  - first:
+      213: -5831522005008966807
+    second: First Asset pack_25
+  - first:
+      213: -6162066289186199641
+    second: First Asset pack_26
+  - first:
+      213: 5648484803216648173
+    second: First Asset pack_27
+  - first:
+      213: -6104727580810472929
+    second: First Asset pack_28
+  - first:
+      213: -5172304915823537547
+    second: First Asset pack_29
+  - first:
+      213: 6159752340329545736
+    second: First Asset pack_30
+  - first:
+      213: -1789216683959925476
+    second: First Asset pack_31
+  - first:
+      213: 1122539219690798384
+    second: First Asset pack_32
+  - first:
+      213: -7816496795767221800
+    second: First Asset pack_33
+  - first:
+      213: 6229898325360011213
+    second: First Asset pack_34
+  - first:
+      213: 2544330747295137535
+    second: First Asset pack_35
+  - first:
+      213: 368155322005417483
+    second: First Asset pack_36
+  - first:
+      213: -6291074796186825737
+    second: First Asset pack_37
+  - first:
+      213: -5008980758784159670
+    second: First Asset pack_38
+  - first:
+      213: 6757973414526870720
+    second: First Asset pack_39
+  - first:
+      213: 3853861597156206762
+    second: First Asset pack_40
+  - first:
+      213: 8906698960529386993
+    second: First Asset pack_41
+  - first:
+      213: -1927402375437660112
+    second: First Asset pack_42
+  - first:
+      213: -6167802730281565297
+    second: First Asset pack_43
+  - first:
+      213: -2254299456178669869
+    second: First Asset pack_44
+  - first:
+      213: -2092001235761705237
+    second: First Asset pack_45
+  - first:
+      213: -3301063292833762250
+    second: First Asset pack_46
+  - first:
+      213: 2605276309639479133
+    second: First Asset pack_47
+  - first:
+      213: -6470475459320645868
+    second: First Asset pack_48
+  - first:
+      213: -4651559297796132831
+    second: First Asset pack_49
+  - first:
+      213: 6452084188536969759
+    second: First Asset pack_50
+  - first:
+      213: 2087057027083395244
+    second: First Asset pack_51
+  - first:
+      213: -4196463120559949441
+    second: First Asset pack_52
+  - first:
+      213: 8006925790379458937
+    second: First Asset pack_53
+  - first:
+      213: 5468688911448391342
+    second: First Asset pack_54
+  - first:
+      213: -4939170568504911329
+    second: First Asset pack_55
+  - first:
+      213: -3647254933635631895
+    second: First Asset pack_56
+  - first:
+      213: -2904119985220814105
+    second: First Asset pack_57
+  - first:
+      213: 8683611474061986758
+    second: First Asset pack_58
+  - first:
+      213: 561922346037314680
+    second: First Asset pack_59
+  - first:
+      213: 3264472387660669234
+    second: First Asset pack_60
+  - first:
+      213: -5750523156941517622
+    second: First Asset pack_61
+  - first:
+      213: 5823907408302632224
+    second: First Asset pack_62
+  - first:
+      213: 7718971091509761455
+    second: First Asset pack_63
+  - first:
+      213: 2181876170964611440
+    second: First Asset pack_64
+  - first:
+      213: -8188523652544561510
+    second: First Asset pack_65
+  - first:
+      213: -3891991186032942925
+    second: First Asset pack_66
+  - first:
+      213: 389029398499226494
+    second: First Asset pack_67
+  - first:
+      213: -191353709845833014
+    second: First Asset pack_68
+  - first:
+      213: -7929979062602763474
+    second: First Asset pack_69
+  - first:
+      213: -1303735877024165901
+    second: First Asset pack_70
+  - first:
+      213: 8207394740137053744
+    second: First Asset pack_71
+  - first:
+      213: 5761557754334719981
+    second: First Asset pack_72
+  - first:
+      213: 6831250064223530374
+    second: First Asset pack_73
+  - first:
+      213: 6954146222134650175
+    second: First Asset pack_74
+  - first:
+      213: 1739660523441555328
+    second: First Asset pack_75
+  - first:
+      213: -2753758160236065714
+    second: First Asset pack_76
+  - first:
+      213: -8388664454196963897
+    second: First Asset pack_77
+  - first:
+      213: -5338043391460819195
+    second: First Asset pack_78
+  - first:
+      213: 8304609134512937214
+    second: First Asset pack_79
+  - first:
+      213: -2883861683594218578
+    second: First Asset pack_80
+  - first:
+      213: 9044515381109553125
+    second: First Asset pack_81
+  - first:
+      213: -2909973472486221800
+    second: First Asset pack_82
+  - first:
+      213: -7958655769383165881
+    second: First Asset pack_83
+  - first:
+      213: 4205175889707749546
+    second: First Asset pack_84
+  - first:
+      213: 8272372403297150603
+    second: First Asset pack_85
+  - first:
+      213: 6990500954953366661
+    second: First Asset pack_86
+  - first:
+      213: 955415816694159273
+    second: First Asset pack_87
+  - first:
+      213: 1945424601257296572
+    second: First Asset pack_88
+  - first:
+      213: 1358035953716884763
+    second: First Asset pack_89
+  - first:
+      213: -7925865413063419399
+    second: First Asset pack_90
+  - first:
+      213: -6480450126729755892
+    second: First Asset pack_91
+  - first:
+      213: 481059668917309563
+    second: First Asset pack_92
+  - first:
+      213: 3395641409199456261
+    second: First Asset pack_93
+  - first:
+      213: -6322384114103499350
+    second: First Asset pack_94
+  - first:
+      213: 4789361960334696824
+    second: First Asset pack_95
+  - first:
+      213: -4352557955118085895
+    second: First Asset pack_96
+  - first:
+      213: -1928631563171246141
+    second: First Asset pack_97
+  - first:
+      213: 5605033787276755011
+    second: First Asset pack_98
+  - first:
+      213: -2949135609485816422
+    second: First Asset pack_99
+  - first:
+      213: 6645561491760980541
+    second: First Asset pack_100
+  - first:
+      213: -1853075122792000267
+    second: First Asset pack_101
+  - first:
+      213: 1388604532028798643
+    second: First Asset pack_102
+  - first:
+      213: -7492696420516624365
+    second: First Asset pack_103
+  - first:
+      213: 5428039132942397074
+    second: First Asset pack_104
+  - first:
+      213: 6451834712379054564
+    second: First Asset pack_105
+  - first:
+      213: 2495188580834183458
+    second: First Asset pack_106
+  - first:
+      213: 234446617626911749
+    second: First Asset pack_107
+  - first:
+      213: -5054327362687392450
+    second: First Asset pack_108
+  - first:
+      213: -5138863214230469775
+    second: First Asset pack_109
+  - first:
+      213: 3616610414347515018
+    second: First Asset pack_110
+  - first:
+      213: 700016787593169002
+    second: First Asset pack_111
+  - first:
+      213: 4090705339808820644
+    second: First Asset pack_112
+  - first:
+      213: 4691435685420728982
+    second: First Asset pack_113
+  - first:
+      213: -4287759736511423828
+    second: First Asset pack_114
+  - first:
+      213: 4410773169229636833
+    second: First Asset pack_115
+  - first:
+      213: -6562216661548440452
+    second: First Asset pack_116
+  - first:
+      213: -3617549603872241112
+    second: First Asset pack_117
+  - first:
+      213: 4218248601909952624
+    second: First Asset pack_118
+  - first:
+      213: 1712602816538006764
+    second: First Asset pack_119
+  - first:
+      213: -2372206284433659442
+    second: First Asset pack_120
+  - first:
+      213: 6487567840708591347
+    second: First Asset pack_121
+  - first:
+      213: 5309618441144856620
+    second: First Asset pack_122
+  - first:
+      213: 6318190428087150870
+    second: First Asset pack_123
+  - first:
+      213: 1459529390764027673
+    second: First Asset pack_124
+  - first:
+      213: -54619954596074573
+    second: First Asset pack_125
+  - first:
+      213: 999212679987164417
+    second: First Asset pack_126
+  - first:
+      213: -817215276323884573
+    second: First Asset pack_127
+  - first:
+      213: 5805002854760212112
+    second: First Asset pack_128
+  - first:
+      213: -28713481199535488
+    second: First Asset pack_129
+  - first:
+      213: 5000932556721049901
+    second: First Asset pack_130
+  - first:
+      213: -8844789884003900569
+    second: First Asset pack_131
+  - first:
+      213: 6712977423402966365
+    second: First Asset pack_132
+  - first:
+      213: -736743183361828157
+    second: First Asset pack_133
+  - first:
+      213: 7781743499049794799
+    second: First Asset pack_134
+  - first:
+      213: -1695351798255198964
+    second: First Asset pack_135
+  - first:
+      213: 5963337096702553656
+    second: First Asset pack_136
+  - first:
+      213: 701576979427257797
+    second: First Asset pack_137
+  - first:
+      213: 1305949780168390995
+    second: First Asset pack_138
+  - first:
+      213: -21474044398764808
+    second: First Asset pack_139
+  - first:
+      213: -8495433529610728220
+    second: First Asset pack_140
+  - first:
+      213: -334386968167993263
+    second: First Asset pack_141
+  - first:
+      213: 6965039618631397201
+    second: First Asset pack_142
+  - first:
+      213: -4467476695736381224
+    second: First Asset pack_143
+  - first:
+      213: 3237096256097889682
+    second: First Asset pack_144
+  - first:
+      213: 8437410060041003492
+    second: First Asset pack_145
+  - first:
+      213: -482899713743455105
+    second: First Asset pack_146
+  - first:
+      213: -2748802452105676736
+    second: First Asset pack_147
+  - first:
+      213: 6443578092792378114
+    second: First Asset pack_148
+  - first:
+      213: 585255813900766308
+    second: First Asset pack_149
+  - first:
+      213: -1989519241244682841
+    second: First Asset pack_150
+  - first:
+      213: -3488338772714302695
+    second: First Asset pack_151
+  - first:
+      213: -4447892165895774272
+    second: First Asset pack_152
+  - first:
+      213: 3578537290148957322
+    second: First Asset pack_153
+  - first:
+      213: -1852275964535612469
+    second: First Asset pack_154
+  - first:
+      213: 1080122773143692055
+    second: First Asset pack_155
+  - first:
+      213: 5407564762246223904
+    second: First Asset pack_156
+  - first:
+      213: -8077295805526695090
+    second: First Asset pack_157
+  - first:
+      213: 3680324945965438106
+    second: First Asset pack_158
+  - first:
+      213: -612231798492733772
+    second: First Asset pack_159
+  - first:
+      213: -167033866031426019
+    second: First Asset pack_160
+  - first:
+      213: 8139946493893310908
+    second: First Asset pack_161
+  - first:
+      213: 6713077773755060943
+    second: First Asset pack_162
+  - first:
+      213: 2185289963388665517
+    second: First Asset pack_163
+  - first:
+      213: 4635417943737828809
+    second: First Asset pack_164
+  - first:
+      213: 3367197166886385554
+    second: First Asset pack_165
+  - first:
+      213: 3943524356146463491
+    second: First Asset pack_166
+  - first:
+      213: 790267608489600944
+    second: First Asset pack_167
+  - first:
+      213: -4287060606470575891
+    second: First Asset pack_168
+  - first:
+      213: 2293911518353120993
+    second: First Asset pack_169
+  - first:
+      213: 3785374562965912691
+    second: First Asset pack_170
+  - first:
+      213: -3091561047457959293
+    second: First Asset pack_171
+  - first:
+      213: -6506551274785968482
+    second: First Asset pack_172
+  - first:
+      213: 1002052579671723445
+    second: First Asset pack_173
+  - first:
+      213: 4055027069195371747
+    second: First Asset pack_174
+  - first:
+      213: -8111640873487385032
+    second: First Asset pack_175
+  - first:
+      213: 1611010168452362631
+    second: First Asset pack_176
+  - first:
+      213: 9044044780580410728
+    second: First Asset pack_177
+  - first:
+      213: -6134471990895365836
+    second: First Asset pack_178
+  - first:
+      213: -1288337461568194503
+    second: First Asset pack_179
+  - first:
+      213: 6917209022220130103
+    second: First Asset pack_180
+  - first:
+      213: -8770728149045321627
+    second: First Asset pack_181
+  - first:
+      213: 761884334035212716
+    second: First Asset pack_182
+  - first:
+      213: -1747109904019949065
+    second: First Asset pack_183
+  - first:
+      213: -7403389419336734866
+    second: First Asset pack_184
+  - first:
+      213: 7527088617944020412
+    second: First Asset pack_185
+  - first:
+      213: 7102452159231268682
+    second: First Asset pack_186
+  - first:
+      213: -754164067303805829
+    second: First Asset pack_187
+  - first:
+      213: -6188236354415710918
+    second: First Asset pack_188
+  - first:
+      213: 195892086232558546
+    second: First Asset pack_189
+  - first:
+      213: 2778300249874975452
+    second: First Asset pack_190
+  - first:
+      213: 2243769041077091622
+    second: First Asset pack_191
+  - first:
+      213: 8874241729842682177
+    second: First Asset pack_192
+  - first:
+      213: -8350170804022345658
+    second: First Asset pack_193
+  - first:
+      213: -435855682257729656
+    second: First Asset pack_194
+  - first:
+      213: -3155268542146577727
+    second: First Asset pack_195
+  - first:
+      213: 6488913870081410883
+    second: First Asset pack_196
+  - first:
+      213: -6746948613349831857
+    second: First Asset pack_197
+  - first:
+      213: -1149850639068110569
+    second: First Asset pack_198
+  - first:
+      213: -4977234152055323612
+    second: First Asset pack_199
+  - first:
+      213: 7287672425632267243
+    second: First Asset pack_200
+  - first:
+      213: -1463406330683215585
+    second: First Asset pack_201
+  - first:
+      213: -7119611832849840007
+    second: First Asset pack_202
+  - first:
+      213: -578784377995955804
+    second: First Asset pack_203
+  - first:
+      213: 3095892390498506630
+    second: First Asset pack_204
+  - first:
+      213: -5893232707644380998
+    second: First Asset pack_205
+  - first:
+      213: 8826173024639854709
+    second: First Asset pack_206
+  - first:
+      213: -2747777876266512537
+    second: First Asset pack_207
+  - first:
+      213: -6634565302944223963
+    second: First Asset pack_208
+  - first:
+      213: 316921785198201447
+    second: First Asset pack_209
+  - first:
+      213: 5307983848517773171
+    second: First Asset pack_210
+  - first:
+      213: 7713635699433063509
+    second: First Asset pack_211
+  - first:
+      213: -8943000133290329670
+    second: First Asset pack_212
+  - first:
+      213: 5867722489986102914
+    second: First Asset pack_213
+  - first:
+      213: -9181502047356474378
+    second: First Asset pack_214
+  - first:
+      213: 1309349291952110125
+    second: First Asset pack_215
+  - first:
+      213: -4378561947541804317
+    second: First Asset pack_216
+  - first:
+      213: 7464161788460691494
+    second: First Asset pack_217
+  - first:
+      213: -2322771184414344077
+    second: First Asset pack_218
+  - first:
+      213: 199237068126622218
+    second: First Asset pack_219
+  - first:
+      213: -3920057328273710095
+    second: First Asset pack_220
+  - first:
+      213: -1859546636817513758
+    second: First Asset pack_221
+  - first:
+      213: -8287052452600314689
+    second: First Asset pack_222
+  - first:
+      213: 4146808507247728559
+    second: First Asset pack_223
+  - first:
+      213: 4988724004360981976
+    second: First Asset pack_224
+  - first:
+      213: 8211782186137007976
+    second: First Asset pack_225
+  - first:
+      213: 5841260043732015217
+    second: First Asset pack_226
+  - first:
+      213: -8672104984368170794
+    second: First Asset pack_227
+  - first:
+      213: 2978012057224973606
+    second: First Asset pack_228
+  - first:
+      213: 549665589681188763
+    second: First Asset pack_229
+  - first:
+      213: 8562973959611108907
+    second: First Asset pack_230
+  - first:
+      213: 5844209391018628471
+    second: First Asset pack_231
+  - first:
+      213: 8037727993184432591
+    second: First Asset pack_232
+  - first:
+      213: -2915449582231639194
+    second: First Asset pack_233
+  - first:
+      213: -4721226523167822586
+    second: First Asset pack_234
+  - first:
+      213: -377350988434001142
+    second: First Asset pack_235
+  - first:
+      213: 3170962054083114503
+    second: First Asset pack_236
+  - first:
+      213: -3724768006321681614
+    second: First Asset pack_237
+  - first:
+      213: 712902002427944286
+    second: First Asset pack_238
+  - first:
+      213: -858583656856982378
+    second: First Asset pack_239
+  - first:
+      213: 4501002606167147320
+    second: First Asset pack_240
+  - first:
+      213: -7656842960394026266
+    second: First Asset pack_241
+  - first:
+      213: -7102062895800319691
+    second: First Asset pack_242
+  - first:
+      213: -4866855226392961504
+    second: First Asset pack_243
+  - first:
+      213: 7613579473704596682
+    second: First Asset pack_244
+  - first:
+      213: -7471033220218463116
+    second: First Asset pack_245
+  - first:
+      213: 9003250144612100654
+    second: First Asset pack_246
+  - first:
+      213: 6104867570178306097
+    second: First Asset pack_247
+  - first:
+      213: 7823277395302142738
+    second: First Asset pack_248
+  - first:
+      213: -2875778151538471458
+    second: First Asset pack_249
+  - first:
+      213: 1707684717935277990
+    second: First Asset pack_250
+  - first:
+      213: -3105442489948670801
+    second: First Asset pack_251
+  - first:
+      213: 5305288174419333325
+    second: First Asset pack_252
+  - first:
+      213: -5163719610176493922
+    second: First Asset pack_253
+  - first:
+      213: -459790086736634921
+    second: First Asset pack_254
+  - first:
+      213: 5993853019827807411
+    second: First Asset pack_255
+  - first:
+      213: -6022957376080551668
+    second: First Asset pack_256
+  - first:
+      213: 8087512011470985067
+    second: First Asset pack_257
+  - first:
+      213: -4940787456625964525
+    second: First Asset pack_258
+  - first:
+      213: -1150810707519829702
+    second: First Asset pack_259
+  - first:
+      213: -5280843720224415185
+    second: First Asset pack_260
+  - first:
+      213: -5742457229263408410
+    second: First Asset pack_261
+  - first:
+      213: 8201621695996070012
+    second: First Asset pack_262
+  - first:
+      213: -1919222968694925849
+    second: First Asset pack_263
+  - first:
+      213: -8722493453601535496
+    second: First Asset pack_264
+  - first:
+      213: -3964414691958000931
+    second: First Asset pack_265
+  - first:
+      213: -3994242401692084500
+    second: First Asset pack_266
+  - first:
+      213: -3294196656363297316
+    second: First Asset pack_267
+  - first:
+      213: 3035347228965477903
+    second: First Asset pack_268
+  - first:
+      213: -5006053232608877886
+    second: First Asset pack_269
+  - first:
+      213: 1343796631413544036
+    second: First Asset pack_270
+  - first:
+      213: -1592653821601649088
+    second: First Asset pack_271
+  - first:
+      213: -7071791574015548609
+    second: First Asset pack_272
+  - first:
+      213: -2748767292453558202
+    second: First Asset pack_273
+  - first:
+      213: 3535323322918700716
+    second: First Asset pack_274
+  - first:
+      213: -4815816498534391093
+    second: First Asset pack_275
+  - first:
+      213: 951800358358349501
+    second: First Asset pack_276
+  - first:
+      213: -8353631579489857900
+    second: First Asset pack_277
+  - first:
+      213: -5863146139184837525
+    second: First Asset pack_278
+  - first:
+      213: -8905420712272350331
+    second: First Asset pack_279
+  - first:
+      213: 2375741462761850314
+    second: First Asset pack_280
+  - first:
+      213: -3894031003887115571
+    second: First Asset pack_281
+  - first:
+      213: 8602106673513823035
+    second: First Asset pack_282
+  - first:
+      213: 8304544269591264330
+    second: First Asset pack_283
+  - first:
+      213: 1632024570390046236
+    second: First Asset pack_284
+  - first:
+      213: -2300845089896184998
+    second: First Asset pack_285
+  - first:
+      213: -9159467378925708327
+    second: First Asset pack_286
+  - first:
+      213: 1590542105178819291
+    second: First Asset pack_287
+  - first:
+      213: -6647679114513921698
+    second: First Asset pack_288
+  - first:
+      213: 9039562700937086590
+    second: First Asset pack_289
+  - first:
+      213: -2240527676286524820
+    second: First Asset pack_290
+  - first:
+      213: 5686370143494747588
+    second: First Asset pack_291
+  - first:
+      213: 8590641816912666983
+    second: First Asset pack_292
+  - first:
+      213: 5834499210381172828
+    second: First Asset pack_293
+  - first:
+      213: -6663826995746924825
+    second: First Asset pack_294
+  - first:
+      213: -2483172095356141647
+    second: First Asset pack_295
+  - first:
+      213: 1996556640845031418
+    second: First Asset pack_296
+  - first:
+      213: 7437038107968161910
+    second: First Asset pack_297
+  - first:
+      213: 4029710422123357684
+    second: First Asset pack_298
+  - first:
+      213: 6944408443717133040
+    second: First Asset pack_299
+  - first:
+      213: 1224432085310161077
+    second: First Asset pack_300
+  - first:
+      213: 1539705232678156444
+    second: First Asset pack_301
+  - first:
+      213: -2498261787512917854
+    second: First Asset pack_302
+  - first:
+      213: -7951676621089286509
+    second: First Asset pack_303
+  - first:
+      213: 4112291734184251206
+    second: First Asset pack_304
+  - first:
+      213: -4900360406009041392
+    second: First Asset pack_305
+  - first:
+      213: 8562991157914437237
+    second: First Asset pack_306
+  - first:
+      213: -8930981492830965669
+    second: First Asset pack_307
+  - first:
+      213: -534542717664311141
+    second: First Asset pack_308
+  - first:
+      213: 917963444459919609
+    second: First Asset pack_309
+  - first:
+      213: -8600434155394114972
+    second: First Asset pack_310
+  - first:
+      213: 2065443128417691603
+    second: First Asset pack_311
+  - first:
+      213: 4494452603426664863
+    second: First Asset pack_312
+  - first:
+      213: 1061758173023169538
+    second: First Asset pack_313
+  - first:
+      213: 248035676447836079
+    second: First Asset pack_314
+  - first:
+      213: 3517047143247658069
+    second: First Asset pack_315
+  - first:
+      213: -7472757731319495285
+    second: First Asset pack_316
+  - first:
+      213: -7622150889665266045
+    second: First Asset pack_317
+  - first:
+      213: 2533510420522603883
+    second: First Asset pack_318
+  - first:
+      213: 1591687102490524583
+    second: First Asset pack_319
+  - first:
+      213: -4803313306549921718
+    second: First Asset pack_320
+  - first:
+      213: -4184545617458305496
+    second: First Asset pack_321
+  - first:
+      213: 7162990397594775759
+    second: First Asset pack_322
+  - first:
+      213: -5009417794094267707
+    second: First Asset pack_323
+  - first:
+      213: -4108596398206722264
+    second: First Asset pack_324
+  - first:
+      213: 827572897989917247
+    second: First Asset pack_325
+  - first:
+      213: 3350250102695902070
+    second: First Asset pack_326
+  - first:
+      213: -1569861103490512694
+    second: First Asset pack_327
+  - first:
+      213: 2411101604737426895
+    second: First Asset pack_328
+  - first:
+      213: -3450167100655427827
+    second: First Asset pack_329
+  - first:
+      213: -8020263701937084651
+    second: First Asset pack_330
+  - first:
+      213: 7815115987557208915
+    second: First Asset pack_331
+  - first:
+      213: -1275051813919900986
+    second: First Asset pack_332
+  - first:
+      213: -1066823530848410179
+    second: First Asset pack_333
+  - first:
+      213: -8189071816997332218
+    second: First Asset pack_334
+  - first:
+      213: 5212076593490587322
+    second: First Asset pack_335
+  - first:
+      213: -1389028874141168789
+    second: First Asset pack_336
+  - first:
+      213: -3389214731987047551
+    second: First Asset pack_337
+  - first:
+      213: -4972245100283684766
+    second: First Asset pack_338
+  - first:
+      213: 190070224663681830
+    second: First Asset pack_339
+  - first:
+      213: 2596760421678870573
+    second: First Asset pack_340
+  - first:
+      213: 5264645363950883156
+    second: First Asset pack_341
+  - first:
+      213: 2744644629409341858
+    second: First Asset pack_342
+  - first:
+      213: 6143235485457737653
+    second: First Asset pack_343
+  - first:
+      213: -7411310845407318210
+    second: First Asset pack_344
+  - first:
+      213: 1785129561069338756
+    second: First Asset pack_345
+  - first:
+      213: -2507404913867639183
+    second: First Asset pack_346
+  - first:
+      213: -2863187259597043313
+    second: First Asset pack_347
+  - first:
+      213: 4451512326909387868
+    second: First Asset pack_348
+  - first:
+      213: 2225565636016110219
+    second: First Asset pack_349
+  - first:
+      213: -6501460213696694312
+    second: First Asset pack_350
+  - first:
+      213: 8694163095128989262
+    second: First Asset pack_351
+  - first:
+      213: -2726995903241960656
+    second: First Asset pack_352
+  - first:
+      213: -2509849890341349895
+    second: First Asset pack_353
+  - first:
+      213: -2898351526309233290
+    second: First Asset pack_354
+  - first:
+      213: 8103322417391224116
+    second: First Asset pack_355
+  - first:
+      213: -7320016149341412041
+    second: First Asset pack_356
+  - first:
+      213: 255059318029898108
+    second: First Asset pack_357
+  - first:
+      213: 4011172418074651259
+    second: First Asset pack_358
+  - first:
+      213: -9211752285907085093
+    second: First Asset pack_359
+  - first:
+      213: -3332026572832738790
+    second: First Asset pack_360
+  - first:
+      213: -5972380548643098109
+    second: First Asset pack_361
+  - first:
+      213: 3720930268531850214
+    second: First Asset pack_362
+  - first:
+      213: 1711514984905697138
+    second: First Asset pack_363
+  - first:
+      213: -2758727101173012354
+    second: First Asset pack_364
+  - first:
+      213: 9112292142916654109
+    second: First Asset pack_365
+  - first:
+      213: -6432356684821698878
+    second: First Asset pack_366
+  - first:
+      213: -767224998321783497
+    second: First Asset pack_367
+  - first:
+      213: -1328401569745279185
+    second: First Asset pack_368
+  - first:
+      213: -5607807757582968519
+    second: First Asset pack_369
+  - first:
+      213: 7175815235777017452
+    second: First Asset pack_370
+  - first:
+      213: -6965524543960242607
+    second: First Asset pack_371
+  - first:
+      213: 387702233585248853
+    second: First Asset pack_372
+  - first:
+      213: -2330090241370253218
+    second: First Asset pack_373
+  - first:
+      213: 8417390909372733347
+    second: First Asset pack_374
+  - first:
+      213: 7090094375377689090
+    second: First Asset pack_375
+  - first:
+      213: 9039888113510382673
+    second: First Asset pack_376
+  - first:
+      213: 656095141900691152
+    second: First Asset pack_377
+  - first:
+      213: -8435726949854509369
+    second: First Asset pack_378
+  - first:
+      213: 8077816205750748090
+    second: First Asset pack_379
+  - first:
+      213: -700566507688106910
+    second: First Asset pack_380
+  - first:
+      213: -7048456729996976295
+    second: First Asset pack_381
+  - first:
+      213: 2962177000283396718
+    second: First Asset pack_382
+  - first:
+      213: 5581180235764198875
+    second: First Asset pack_383
+  - first:
+      213: 7634558702854885645
+    second: First Asset pack_384
+  - first:
+      213: 7919815402617970657
+    second: First Asset pack_385
+  - first:
+      213: 7039486230633771091
+    second: First Asset pack_386
+  - first:
+      213: -3743935602828686523
+    second: First Asset pack_387
+  - first:
+      213: 7580260685215071683
+    second: First Asset pack_388
+  - first:
+      213: 5459048077958870710
+    second: First Asset pack_389
+  - first:
+      213: 4682328674413438880
+    second: First Asset pack_390
+  - first:
+      213: 500628643832911857
+    second: First Asset pack_391
+  - first:
+      213: -7817594849760061722
+    second: First Asset pack_392
+  - first:
+      213: 5745089344630031974
+    second: First Asset pack_393
+  - first:
+      213: -1969767418389094772
+    second: First Asset pack_394
+  - first:
+      213: -7418464791460649089
+    second: First Asset pack_395
+  - first:
+      213: 588901440464552900
+    second: First Asset pack_396
+  - first:
+      213: -2713487648145668524
+    second: First Asset pack_397
+  - first:
+      213: -4996469673226325132
+    second: First Asset pack_398
+  - first:
+      213: 1254041011725982446
+    second: First Asset pack_399
+  - first:
+      213: 3291353983623504720
+    second: First Asset pack_400
+  - first:
+      213: 5811826846792142089
+    second: First Asset pack_401
+  - first:
+      213: -5071664528667904596
+    second: First Asset pack_402
+  - first:
+      213: 3209205031907465155
+    second: First Asset pack_403
+  - first:
+      213: 7686736343261937835
+    second: First Asset pack_404
+  - first:
+      213: 4670528170107569813
+    second: First Asset pack_405
+  - first:
+      213: -7976397988078908169
+    second: First Asset pack_406
+  - first:
+      213: 6543214145547605234
+    second: First Asset pack_407
+  - first:
+      213: 5977875575029574411
+    second: First Asset pack_408
+  - first:
+      213: -5123748673492942597
+    second: First Asset pack_409
+  - first:
+      213: 925272269937800655
+    second: First Asset pack_410
+  - first:
+      213: -3140839548070926326
+    second: First Asset pack_411
+  - first:
+      213: -3947613038310737362
+    second: First Asset pack_412
+  - first:
+      213: -4347076630437045030
+    second: First Asset pack_413
+  - first:
+      213: -4442053505068106717
+    second: First Asset pack_414
+  - first:
+      213: -774934779931989467
+    second: First Asset pack_415
+  - first:
+      213: 226072049139765540
+    second: First Asset pack_416
+  - first:
+      213: -3677174945004481374
+    second: First Asset pack_417
+  - first:
+      213: -3153488976436237890
+    second: First Asset pack_418
+  - first:
+      213: 6580675943392000960
+    second: First Asset pack_419
+  - first:
+      213: 4883067854783157177
+    second: First Asset pack_420
+  - first:
+      213: -6210408455667307791
+    second: First Asset pack_421
+  - first:
+      213: 8052662321661640835
+    second: First Asset pack_422
+  - first:
+      213: 3184368489793777270
+    second: First Asset pack_423
+  - first:
+      213: -4015709425953400163
+    second: First Asset pack_424
+  - first:
+      213: -5971023150352696011
+    second: First Asset pack_425
+  - first:
+      213: 1606157192647117162
+    second: First Asset pack_426
+  - first:
+      213: 8935198379699814008
+    second: First Asset pack_427
+  - first:
+      213: -3750814768846249135
+    second: First Asset pack_428
+  - first:
+      213: -7414723575760995694
+    second: First Asset pack_429
+  - first:
+      213: -4770535951907006709
+    second: First Asset pack_430
+  - first:
+      213: -2768914584948941987
+    second: First Asset pack_431
+  - first:
+      213: -6779958990257051608
+    second: First Asset pack_432
+  - first:
+      213: 2005142273758369646
+    second: First Asset pack_433
+  - first:
+      213: 3581813237364051554
+    second: First Asset pack_434
+  - first:
+      213: -1178634667425806399
+    second: First Asset pack_435
+  - first:
+      213: 4373091791283615685
+    second: First Asset pack_436
+  - first:
+      213: -9050606595241317646
+    second: First Asset pack_437
+  - first:
+      213: 3612288156819253228
+    second: First Asset pack_438
+  - first:
+      213: -897438878536785226
+    second: First Asset pack_439
+  - first:
+      213: 4987488311350639819
+    second: First Asset pack_440
+  - first:
+      213: -6337143069379616343
+    second: First Asset pack_441
+  - first:
+      213: 2695910551377341164
+    second: First Asset pack_442
+  - first:
+      213: -2489624000142623964
+    second: First Asset pack_443
+  - first:
+      213: 4815077426163001425
+    second: First Asset pack_444
+  - first:
+      213: -3985171505710956916
+    second: First Asset pack_445
+  - first:
+      213: -1349887101388646179
+    second: First Asset pack_446
+  - first:
+      213: 3348748611236802204
+    second: First Asset pack_447
+  - first:
+      213: -98187388967202742
+    second: First Asset pack_448
+  - first:
+      213: -9019821743462399672
+    second: First Asset pack_449
+  - first:
+      213: -6337909259741971524
+    second: First Asset pack_450
+  - first:
+      213: -6613955115471328960
+    second: First Asset pack_451
+  - first:
+      213: 7761484426493908372
+    second: First Asset pack_452
+  - first:
+      213: -1594350914719399590
+    second: First Asset pack_453
+  - first:
+      213: -7393745357475261348
+    second: First Asset pack_454
+  - first:
+      213: 144797713193578653
+    second: First Asset pack_455
+  - first:
+      213: -7609367631168036281
+    second: First Asset pack_456
+  - first:
+      213: 6926799249077252668
+    second: First Asset pack_457
+  - first:
+      213: -6501281374579977561
+    second: First Asset pack_458
+  - first:
+      213: -8485534093377880331
+    second: First Asset pack_459
+  - first:
+      213: 6876755629819765817
+    second: First Asset pack_460
+  - first:
+      213: -3128507633742191130
+    second: First Asset pack_461
+  - first:
+      213: 5364206138045581247
+    second: First Asset pack_462
+  - first:
+      213: 1672670590581401857
+    second: First Asset pack_463
+  - first:
+      213: -1487605031842629847
+    second: First Asset pack_464
+  - first:
+      213: -6418068699191728965
+    second: First Asset pack_465
+  - first:
+      213: 1846604234151470961
+    second: First Asset pack_466
+  - first:
+      213: 7446819011918606200
+    second: First Asset pack_467
+  - first:
+      213: -7460987830916557539
+    second: First Asset pack_468
+  - first:
+      213: -3827187132753912542
+    second: First Asset pack_469
+  - first:
+      213: 9217871348482335808
+    second: First Asset pack_470
+  - first:
+      213: -6898463399613029344
+    second: First Asset pack_471
+  - first:
+      213: -5542119376215678938
+    second: First Asset pack_472
+  - first:
+      213: 2294281877165682245
+    second: First Asset pack_473
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: First Asset pack_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 300
+        width: 50
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655f86f4a70455040800000000000000
+      internalID: 4635682285510260054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 300
+        width: 74
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd00d757aee5b380800000000000000
+      internalID: -8955989881456161296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 336
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc399a787a4a4290800000000000000
+      internalID: -7905424314582090560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_3
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 336
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8772f1082d062d5a0800000000000000
+      internalID: -6498024855133280392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_4
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 288
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7330a42d8df9230800000000000000
+      internalID: 3647872620889847744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_5
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 288
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1346d3f1b29df3610800000000000000
+      internalID: 1603238771598124081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 195
+        width: 40
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa6eaed04e91efc0800000000000000
+      internalID: -3467316236647503110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_7
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 240
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893bf8caa9199caa0800000000000000
+      internalID: -6140216523436870760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_8
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 196
+        width: 66
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5a110ceaf4fb7e0800000000000000
+      internalID: -1747590518431177268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_9
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 240
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b541aa8c7beb460800000000000000
+      internalID: 7259441721842621191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_10
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 240
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2f527b312febcd0800000000000000
+      internalID: -2540326973299363085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_11
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 240
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb9a72e65a5da8e0800000000000000
+      internalID: -1680587756725953608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 240
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2e4e782514d8e40800000000000000
+      internalID: 5660252129397629680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_13
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 240
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2bed21b92db00d20800000000000000
+      internalID: 3242799718470642475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_14
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 219
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0615ea07c9205c480800000000000000
+      internalID: -8879688219362438816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_15
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 218
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f3ab0d91b309280800000000000000
+      internalID: -9038659470070497423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 219
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11cbc5aa4541adf0800000000000000
+      internalID: -170779123951877861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_17
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 192
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c057aa87e7f1930800000000000000
+      internalID: 4116147641160895590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_18
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 192
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea586f5793180a160800000000000000
+      internalID: 7034764701744924078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_19
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 207
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22995218939947e60800000000000000
+      internalID: 7959154913729419554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_20
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 206
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7452da53b4dab50800000000000000
+      internalID: 6606018922332637150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 207
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8147d018ff75e50800000000000000
+      internalID: 6798183092280629490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_22
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 195
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3b3d63996dbc230800000000000000
+      internalID: 3660255075706844153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_23
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 194
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104f9f4930c1e5d80800000000000000
+      internalID: -8260133864841022463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_24
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 195
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d088f3f3f91bb10800000000000000
+      internalID: 1995551203899477267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_25
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 195
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b119712a5421fa0800000000000000
+      internalID: -5831522005008966807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_26
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 106
+        width: 178
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7a5a6ab51fb7aa0800000000000000
+      internalID: -6162066289186199641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_27
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 120
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7abe66003736e40800000000000000
+      internalID: 5648484803216648173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_28
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 108
+        width: 60
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1213470c96a74ba0800000000000000
+      internalID: -6104727580810472929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_29
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 19
+        width: 158
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572d45645184838b0800000000000000
+      internalID: -5172304915823537547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: First Asset pack_30
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 30
+        width: 85
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80049b52e16db7550800000000000000
+      internalID: 6159752340329545736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
