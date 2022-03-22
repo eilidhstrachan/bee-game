@@ -15,10 +15,10 @@ public class flowerPickup : MonoBehaviour
 
     public AudioClip soundEffect;
 
+    public string key;
     public TextMeshProUGUI promptText;
     public bool playerInRange;
 
-    private bool pickedUp;
  
 
     // Start is called before the first frame update
@@ -33,30 +33,14 @@ public class flowerPickup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (flower.activeInHierarchy == true && pickedUp == false)
+        if (playerInRange == true && Input.GetKeyDown(KeyCode.Space))
         {
-            if (playerInRange == false)
-            {
-                prompt.SetActive(false);
-            }
-
-            if (playerInRange == true)
-            {
-                prompt.SetActive(true);
-                promptText.text = "Space";
-            }
-
-            if (playerInRange == true && Input.GetKeyDown(KeyCode.Space))
-            {
-                AudioSource.PlayClipAtPoint(soundEffect, transform.position);
-                pickedUp = true;
-                flower.SetActive(false);
-                prompt.SetActive(false);
-                bookSpace.SetActive(false);
-                bookButton.SetActive(true);
-                // inventoryItem.sprite = flowerSprite; test code
-                
-            }
+            AudioSource.PlayClipAtPoint(soundEffect, transform.position);
+            flower.SetActive(false);
+            prompt.SetActive(false);
+            bookSpace.SetActive(false);
+            bookButton.SetActive(true);
+            // inventoryItem.sprite = flowerSprite; test code
         }
     }
 
@@ -67,6 +51,9 @@ public class flowerPickup : MonoBehaviour
         {
             playerInRange = true;
             Debug.Log("player in range");
+
+            prompt.SetActive(true); // shows prompt UI item 
+            promptText.text = key; // sets prompt UI item text to value of key 
         }
     }
 
@@ -75,8 +62,10 @@ public class flowerPickup : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            playerInRange = false;
+            playerInRange = false; 
             Debug.Log("player out of range");
+
+            prompt.SetActive(false); // hides the prompt UI item
         }
     }
 
