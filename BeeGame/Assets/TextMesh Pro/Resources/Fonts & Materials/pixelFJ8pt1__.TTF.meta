@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 89645a4d046f1f040a1e77024fc4daeb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - pixelFJ8pt1
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 77e4ac0e20d9b4143b0b837f4fdd1950, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
