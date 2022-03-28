@@ -25468,7 +25468,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 4
   m_Sprite: {fileID: 2418800400597120104, guid: ccdff41b1b0734043bb073390b1896ea,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -54985,6 +54985,7 @@ GameObject:
   - component: {fileID: 1259014521}
   - component: {fileID: 1259014525}
   - component: {fileID: 1259014526}
+  - component: {fileID: 1259014527}
   m_Layer: 0
   m_Name: Detective
   m_TagString: Player
@@ -55139,6 +55140,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1259014527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259014520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2424d25baca9c004fb3ef2856be0d7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1273448221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55586,7 +55599,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flowerName: Rose
-  description: 'This is a red rose! '
+  description: 'Roses come in a variety of colours, but red is generally the most
+    iconic. Symbolic as a gift of love, these flowers are also famous for the thorns
+    on their stems! But its not just people that love them, the bees do too! '
   flowerSprite: {fileID: 21300000, guid: bb89503d7722c36459d228c5e1b4fea4, type: 3}
   photo: {fileID: 675620151}
   pageName: {fileID: 676635471}
@@ -56424,7 +56439,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 4
   m_Sprite: {fileID: 2418800400597120104, guid: ccdff41b1b0734043bb073390b1896ea,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -63340,7 +63355,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 4
   m_Sprite: {fileID: 2418800400597120104, guid: ccdff41b1b0734043bb073390b1896ea,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -64049,7 +64064,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 4
   m_Sprite: {fileID: 4827747180250644562, guid: c2c46ba184fa97642af502656d74879b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -64638,7 +64653,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 4
   m_Sprite: {fileID: 4827747180250644562, guid: c2c46ba184fa97642af502656d74879b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -65399,7 +65414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &2110235724
 AudioSource:
   m_ObjectHideFlags: 0
@@ -65833,7 +65848,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 4
   m_Sprite: {fileID: 4827747180250644562, guid: c2c46ba184fa97642af502656d74879b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
