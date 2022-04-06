@@ -5,40 +5,36 @@ using TMPro;
 
 public class TriggerDialogue : MonoBehaviour
 {
-    public GameObject nametag;
-    public TextMeshProUGUI nametagText;
-    public string nameText;
 
     private bool playerInRange;
+    public string NPCName;
+    public TextMeshProUGUI nametagText;
 
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        if (nametag.activeInHierarchy)
-        {
-            nametag.SetActive(false);
-        }
+        nametagText.text = "";
+        playerInRange = false;
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && playerInRange == true)
+        if (playerInRange && !DialogueManager.GetInstance().dialogueIsRunning)
         {
-            if (nametag.activeInHierarchy)
+            if (Input.GetKeyDown(KeyCode.F))
             {
-                nametag.SetActive(false);
+                nametagText.text = NPCName;
+                DialogueManager.GetInstance().StartDialogue(inkJSON);
             }
             else
             {
-                nametag.SetActive(true);
-                nametagText.text = nameText;
+                nametagText.text = "";
             }
-            DialogueManager.GetInstance().StartDialogue(inkJSON);
         }
     }
 
@@ -56,8 +52,8 @@ public class TriggerDialogue : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerInRange = false;
-            nametag.SetActive(false);
             Debug.Log("player out of range");
         }
     }
+
 }

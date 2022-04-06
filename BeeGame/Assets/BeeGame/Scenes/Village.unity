@@ -24475,6 +24475,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 474943415}
   dialogueText: {fileID: 1396891167}
+  nametag: {fileID: 1132584472}
+  dialogueIsRunning: 0
 --- !u!1 &253622469
 GameObject:
   m_ObjectHideFlags: 0
@@ -24919,6 +24921,8 @@ GameObject:
   - component: {fileID: 296684734}
   - component: {fileID: 296684733}
   - component: {fileID: 296684732}
+  - component: {fileID: 296684735}
+  - component: {fileID: 296684736}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Untagged
@@ -25018,6 +25022,47 @@ Transform:
   m_Father: {fileID: 341840911}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &296684735
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296684731}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.05}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.26, y: 0.19}
+    newSize: {x: 0.26, y: 0.19}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 0.4}
+  m_EdgeRadius: 0
+--- !u!114 &296684736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296684731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e931df303b10040a6f67001e167c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCName: Cat
+  nametagText: {fileID: 2087786145}
+  inkJSON: {fileID: 4900000, guid: 4d40b4541108dfc469f1652bb771b4b9, type: 3}
 --- !u!1 &323206283
 GameObject:
   m_ObjectHideFlags: 0
@@ -60330,6 +60375,8 @@ GameObject:
   - component: {fileID: 1705113675}
   - component: {fileID: 1705113674}
   - component: {fileID: 1705113676}
+  - component: {fileID: 1705113677}
+  - component: {fileID: 1705113678}
   m_Layer: 0
   m_Name: Florist
   m_TagString: Untagged
@@ -60419,6 +60466,47 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.14530331}
   m_Size: {x: 0.47999996, y: 0.6693933}
   m_Direction: 0
+--- !u!114 &1705113677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705113673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e931df303b10040a6f67001e167c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCName: Flora
+  nametagText: {fileID: 2087786145}
+  inkJSON: {fileID: 4900000, guid: 2ecce267afbec654fb4f4cc3636849b5, type: 3}
+--- !u!61 &1705113678
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705113673}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.027044505, y: -0.20734066}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.48, y: 0.96}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.96680003, y: 1.3746812}
+  m_EdgeRadius: 0
 --- !u!1 &1735439107
 GameObject:
   m_ObjectHideFlags: 0
@@ -63834,11 +63922,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34e931df303b10040a6f67001e167c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 874783770}
-  nametag: {fileID: 1132584472}
-  dialogueText: {fileID: 1396891167}
+  NPCName: Mayor
   nametagText: {fileID: 2087786145}
-  nameText: Mayor
   inkJSON: {fileID: 4900000, guid: 70703f0ecc640764f8fcb74a20f3c1b2, type: 3}
 --- !u!61 &1854346655
 BoxCollider2D:
@@ -65761,6 +65846,8 @@ GameObject:
   - component: {fileID: 2106693143}
   - component: {fileID: 2106693142}
   - component: {fileID: 2106693144}
+  - component: {fileID: 2106693146}
+  - component: {fileID: 2106693145}
   m_Layer: 0
   m_Name: Beekeeper
   m_TagString: Untagged
@@ -65850,6 +65937,47 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0000009437402, y: -0.14951497}
   m_Size: {x: 0.47999996, y: 0.6609704}
   m_Direction: 0
+--- !u!114 &2106693145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106693141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e931df303b10040a6f67001e167c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCName: Bea
+  nametagText: {fileID: 2087786145}
+  inkJSON: {fileID: 4900000, guid: 562e4b5693d7898429125e4788b7beae, type: 3}
+--- !u!61 &2106693146
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106693141}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.017997265, y: -0.17397133}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.48, y: 0.96}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7799506, y: 1.3079429}
+  m_EdgeRadius: 0
 --- !u!1 &2110235723
 GameObject:
   m_ObjectHideFlags: 0

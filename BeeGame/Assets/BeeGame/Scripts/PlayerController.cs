@@ -20,6 +20,10 @@ public class PlayerController : MonoBehaviour
 
     public void OnFixedUpdate()
     {
+        if (DialogueManager.GetInstance().dialogueIsRunning)
+        {
+            return;
+        }
         app.model.player.rb.MovePosition(app.model.player.rb.position + app.model.player.movement * app.model.player.moveSpeed * Time.fixedDeltaTime);
 
     }

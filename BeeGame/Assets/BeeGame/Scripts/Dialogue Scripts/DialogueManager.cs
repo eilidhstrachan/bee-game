@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Ink.Runtime;
+using UnityEngine.EventSystems;
 
 public class DialogueManager : MonoBehaviour
 {
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TextMeshProUGUI dialogueText;
+    [SerializeField] private GameObject nametag;
 
     private Story currentItem;
 
     private static DialogueManager instance;
 
-    private bool dialogueIsRunning;
+    public bool dialogueIsRunning;
 
     private void Awake()
     {
@@ -35,11 +37,12 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueIsRunning = false;
         dialogueBox.SetActive(false);
+        nametag.SetActive(false);
     }
 
     private void Update()
     {
-        if (dialogueIsRunning != true)
+        if (!dialogueIsRunning)
         {
             return;
         }
@@ -55,15 +58,17 @@ public class DialogueManager : MonoBehaviour
         currentItem = new Story(inkJSON.text);
         dialogueIsRunning = true;
         dialogueBox.SetActive(true);
+        nametag.SetActive(true);
 
-        ContinueStory();
+        //ContinueStory();
     }
 
     private void StopDialogue()
     {
         dialogueIsRunning = false;
-        dialogueText.text = "";
         dialogueBox.SetActive(false);
+        dialogueText.text = "";
+        nametag.SetActive(false);
     }
 
     private void ContinueStory()
