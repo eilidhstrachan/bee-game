@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/StartMenu.unity
+    path: Assets/BeeGame/Scenes/StartMenu.unity
     guid: c158f83a7a53f734fbfe1431e1e50cf0
   - enabled: 1
-    path: Assets/Scenes/Village.unity
+    path: Assets/BeeGame/Scenes/Village.unity
     guid: a446390fdf151664080f089454cabadb
   m_configObjects: {}
