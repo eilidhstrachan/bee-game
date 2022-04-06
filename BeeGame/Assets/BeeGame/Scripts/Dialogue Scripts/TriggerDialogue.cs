@@ -5,9 +5,7 @@ using TMPro;
 
 public class TriggerDialogue : MonoBehaviour
 {
-    public GameObject dialogueBox;
     public GameObject nametag;
-    public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI nametagText;
     public string nameText;
 
@@ -19,10 +17,6 @@ public class TriggerDialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (dialogueBox.activeInHierarchy)
-        {
-            dialogueBox.SetActive(false);
-        }
         if (nametag.activeInHierarchy)
         {
             nametag.SetActive(false);
@@ -35,16 +29,14 @@ public class TriggerDialogue : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F) && playerInRange == true)
         {
-            if (dialogueBox.activeInHierarchy && nametag.activeInHierarchy)
+            if (nametag.activeInHierarchy)
             {
-                dialogueBox.SetActive(false);
                 nametag.SetActive(false);
             }
             else
             {
                 nametag.SetActive(true);
                 nametagText.text = nameText;
-                dialogueBox.SetActive(true);
             }
             DialogueManager.GetInstance().StartDialogue(inkJSON);
         }
@@ -64,7 +56,6 @@ public class TriggerDialogue : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerInRange = false;
-            dialogueBox.SetActive(false);
             nametag.SetActive(false);
             Debug.Log("player out of range");
         }
