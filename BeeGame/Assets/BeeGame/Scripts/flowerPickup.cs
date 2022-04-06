@@ -15,8 +15,6 @@ public class flowerPickup : MonoBehaviour
 
     public AudioClip soundEffect;
 
-    public string key;
-    public TextMeshProUGUI promptText;
     public bool playerInRange;
 
  
@@ -53,7 +51,6 @@ public class flowerPickup : MonoBehaviour
             Debug.Log("player in range");
 
             prompt.SetActive(true); // shows prompt UI item 
-            promptText.text = key; // sets prompt UI item text to value of key 
         }
     }
 
