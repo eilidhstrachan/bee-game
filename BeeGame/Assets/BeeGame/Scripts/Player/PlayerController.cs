@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
+
         app.model.player.rb.MovePosition(app.model.player.rb.position + app.model.player.movement * app.model.player.moveSpeed * Time.fixedDeltaTime);
 
     }
