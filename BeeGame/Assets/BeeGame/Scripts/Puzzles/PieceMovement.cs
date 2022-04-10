@@ -12,20 +12,19 @@ public class PieceMovement : MonoBehaviour
     private float startPosX;
     private float startPosY;
 
-    private bool finalPos;
-
     public GameObject correspondingSpace;
+    public bool isPlaced;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        isPlaced = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (finalPos == false)
+        if (isPlaced == false)
         {
             if (isMoving == true)
             {
@@ -61,7 +60,8 @@ public class PieceMovement : MonoBehaviour
         if (Mathf.Abs(this.transform.localPosition.x - correspondingSpace.transform.localPosition.x) <= 0.05f && Mathf.Abs(this.transform.localPosition.y - correspondingSpace.transform.localPosition.y) <= 0.05f)
         {
             this.transform.position = new Vector3(correspondingSpace.transform.position.x, correspondingSpace.transform.position.y, correspondingSpace.transform.position.z);
-            finalPos = true;
+            isPlaced = true;
+            
         }
     }
 }

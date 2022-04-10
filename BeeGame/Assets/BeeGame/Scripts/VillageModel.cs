@@ -5,5 +5,6 @@ using UnityEngine;
 public class VillageModel : VillageElement
 {
     public PlayerModel player;
+   // public PieceModel[] piece;
 
 }

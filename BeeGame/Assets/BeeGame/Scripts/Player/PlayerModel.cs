@@ -8,4 +8,5 @@ public class PlayerModel : VillageElement
     public Rigidbody2D rb;
     public Vector2 movement;
     public Animator animator;
+    public int puzzlePoints;
 }

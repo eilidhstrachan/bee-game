@@ -5,7 +5,7 @@ using UnityEngine;
 public class VillageController : VillageElement
 {
     public PlayerController player;
-
+   //public PieceController piece;
     // Start is called before the first frame update
 
 }

@@ -1,48 +1,91 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PuzzleLogic : MonoBehaviour
 {
     public GameObject[] puzzlePieces;
-    public GameObject[] emptySpaces;
+    public GameObject winMessage;
 
     private int total;
-    private int[] hasChecked;
+    private int pointCounter;
     private bool isComplete;
+    private bool[] toCheck;
+    private bool finish;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        total = 0;
+        winMessage.SetActive(false);
+
         isComplete = false;
+        finish = false;
 
-        int[] hasChecked = new int[puzzlePieces.Length];
+        pointCounter = 0;
 
-        for (int index = 0; index < puzzlePieces.Length; index++)
+        total = puzzlePieces.Length;
+        Debug.Log("Total = "+ total);
+
+        toCheck = new bool[total];
+        for (int i = 0; i < total; i++)
         {
-            hasChecked[index] = 0;
+            toCheck[i] = false;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        for (int i = 0; i < puzzlePieces.Length; i++)
+
+        if (isComplete == false)
         {
-            if (puzzlePieces[i].transform.position == emptySpaces[i].transform.position)
+            CheckPiece();
+            CheckIfComplete();
+        }
+        
+        if (isComplete == true && finish == false)
+        {
+            PuzzleCompleted();
+            finish = true;
+        }    
+        
+        if (isComplete == true && finish == true)
+        {
+            return;
+        }
+
+    }
+
+    public void CheckPiece()
+    {
+        for (int i = 0; i < total; i++)
+        {
+            if (puzzlePieces[i].GetComponent<PieceMovement>().isPlaced == true && toCheck[i] == false)
             {
-                hasChecked[i] = i;
-                total++;
-                Debug.Log("Total = " + total);
-                Debug.Log("Has checked = " + hasChecked[i]);
+                toCheck[i] = true;
+                pointCounter++;
+                Debug.Log("Counter =" + pointCounter);
             }
         }
 
-        if (total == puzzlePieces.Length)
+    }
+
+    public void CheckIfComplete()
+    {
+        if (pointCounter == total)
         {
             isComplete = true;
-            Debug.Log("Puzzle completed!! = " + isComplete);
         }
+    }    
+
+    public void PuzzleCompleted()
+    {
+        Debug.Log("Puzzle Complete!");
+        winMessage.SetActive(true);
+        PointsManager.playerPoints++;
+        Debug.Log("Player Points" + PointsManager.playerPoints);
     }
+
 }

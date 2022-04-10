@@ -29,5 +29,11 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void AddPuzzlePoints()
+    {
+        app.model.player.puzzlePoints++;
+        Debug.Log("Puzzle points added! = " + app.model.player.puzzlePoints);
+    }
+
 
 }
