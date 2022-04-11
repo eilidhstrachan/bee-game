@@ -9,4 +9,5 @@ public class PlayerModel : VillageElement
     public Vector2 movement;
     public Animator animator;
     public int puzzlePoints;
+    public GameObject playerObject;
 }
