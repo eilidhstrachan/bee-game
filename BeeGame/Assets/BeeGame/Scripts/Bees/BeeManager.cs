@@ -7,8 +7,7 @@ public class BeeManager : MonoBehaviour
     public List<GameObject> bees;
     public List<GameObject> flowers;
 
-    // Start is called before the first frame update
-    void Start()
+    public void Awake()
     {
         for (int i = 0; i < bees.Count; i++)
         {
@@ -16,11 +15,12 @@ public class BeeManager : MonoBehaviour
         }
     }
 
-    public void BeeAppear()
+    // Update is called once per frame
+    void Update()
     {
         for (int i = 0; i < flowers.Count; i++)
-        {
-            if (bees[i].activeInHierarchy == false && flowers[i].activeInHierarchy == false)
+        { 
+            if (flowers[i].activeInHierarchy == false)
             {
                 bees[i].SetActive(true);
             }

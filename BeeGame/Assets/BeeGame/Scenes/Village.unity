@@ -24739,7 +24739,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 279966330}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d091dfc396f8f0d468711aefd308fbef, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e820c189c6d8f44780429f632de0317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bees:
@@ -52019,6 +52019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ee9e43f6608c9408110b57d6d783f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flowerCount: 0
 --- !u!1 &874783770
 GameObject:
   m_ObjectHideFlags: 0
