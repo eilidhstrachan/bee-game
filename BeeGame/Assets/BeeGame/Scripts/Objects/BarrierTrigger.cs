@@ -3,41 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-// the base for this code was made with the help of https://www.youtube.com/watch?v=vY0Sk93YUhA by Trevor Mock and then built upon by myself
-public class TriggerDialogue : MonoBehaviour
+public class BarrierTrigger : MonoBehaviour
 {
-    private bool playerInRange;
-    public string NPCName;
-    public TextMeshProUGUI nametagText;
+    public int requiredPoints;
     public GameObject prompt;
+    public TextMeshProUGUI tagText;
+
+    private bool playerInRange;
 
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
 
     void Awake()
     {
-        nametagText.text = "";
+        this.gameObject.SetActive(true);
         prompt.SetActive(false);
         playerInRange = false;
     }
 
-
-    // Update is called once per frame
     void Update()
     {
-
-        if (playerInRange && !DialogueManager.GetInstance().dialogueIsRunning)
+        if (playerInRange == true)
         {
             prompt.SetActive(true);
             if (Input.GetKeyDown(KeyCode.F))
             {
-                nametagText.text = NPCName;
+                tagText.text = name;
                 DialogueManager.GetInstance().StartDialogue(inkJSON);
                 prompt.SetActive(false);
-            }
-            else
-            {
-                nametagText.text = "";
             }
         }
         else
@@ -45,6 +38,10 @@ public class TriggerDialogue : MonoBehaviour
             prompt.SetActive(false);
         }
 
+        if (PointsManager.playerPoints >= 2)
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
