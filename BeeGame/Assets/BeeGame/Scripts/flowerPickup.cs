@@ -12,17 +12,16 @@ public class flowerPickup : MonoBehaviour
     public GameObject bookButton;
     public GameObject flower;
     public GameObject prompt;
+    public GameObject bees;
+    public GameObject encyclopaedia;
 
     public AudioClip soundEffect;
 
     public bool playerInRange;
 
- 
-
     // Start is called before the first frame update
     void Start()
-    { 
-
+    {
         if (prompt.activeInHierarchy)
         {
             prompt.SetActive(false);
@@ -40,6 +39,9 @@ public class flowerPickup : MonoBehaviour
                 bookSpace.SetActive(false);
                 bookButton.SetActive(true);
 
+                bees.GetComponent<BeeManager>().BeeAppear();
+                encyclopaedia.GetComponent<CollectionManager>().AddFlowers();
+                
                 // inventoryItem.sprite = flowerSprite; test code
             }
         

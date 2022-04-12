@@ -23,6 +23,7 @@ public class DisplayPuzzle : MonoBehaviour
             prompt.SetActive(true);
             if (Input.GetKeyDown(KeyCode.F))
             {
+                SaveDataManager.instance.SaveGame();
                 SceneManager.LoadScene(sceneName);
             }
         }

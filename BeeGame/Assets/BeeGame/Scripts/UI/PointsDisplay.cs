@@ -25,7 +25,7 @@ public class PointsDisplay : MonoBehaviour, IDataManagement
         this.points = data.puzzlePoints;
     }
 
-    public void SaveData(ref GameData data)
+    public void SaveData(GameData data)
     {
         data.puzzlePoints = this.points;
     }

@@ -7,20 +7,9 @@ public class ButtonSceneChange : MonoBehaviour
 {
     public string scene; // the name of the scene to change to
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void onButtonPress()
     {
         SceneManager.LoadScene(scene);
+        SaveDataManager.instance.SaveGame();
     }
 }

@@ -13,18 +13,6 @@ public class pageDetails : MonoBehaviour
     public TextMeshProUGUI pageName;
     public TextMeshProUGUI pageDescription;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void onButtonPress()
     {
         photo.GetComponent<Image>().sprite = flowerSprite;

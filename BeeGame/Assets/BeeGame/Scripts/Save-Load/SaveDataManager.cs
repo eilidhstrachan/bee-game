@@ -80,10 +80,11 @@ public class SaveDataManager : MonoBehaviour
     {
         foreach (IDataManagement dataObject in dataManagementObjects)
         {
-            dataObject.SaveData(ref gameData);
+            dataObject.SaveData(gameData);
         }
 
         Debug.Log("Current saved puzzle points = " + gameData.puzzlePoints);
+        Debug.Log("Current saved position = " + gameData.playerPosition);
 
         fileHandler.Save(gameData);
     }
@@ -104,6 +105,7 @@ public class SaveDataManager : MonoBehaviour
         }
 
         Debug.Log("Amount of puzzle points loaded in = " + gameData.puzzlePoints);
+        Debug.Log("Player position loaded in = " + gameData.playerPosition);
     }
 
     private void OnApplicationQuit()
