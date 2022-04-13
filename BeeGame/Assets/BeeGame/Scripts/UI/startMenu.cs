@@ -5,31 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class startMenu : MonoBehaviour
 {
-    public GameObject form;
+    public GameObject startForm;
+    public GameObject instructions;
+    public GameObject credits;
 
     // Start is called before the first frame update
     void Start()
     {
-        form.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        startForm.SetActive(false);
+        instructions.SetActive(false);
+        credits.SetActive(false);
     }
 
     public void StartGame()
     {
-        form.SetActive(true);
-    }
-
-    public void CloseForm()
-    {
-        if (form.activeInHierarchy == true)
-        {
-            form.SetActive(false);
-        }
+        startForm.SetActive(true);
     }
 
     public void NewGame()
@@ -44,15 +34,19 @@ public class startMenu : MonoBehaviour
         SceneManager.LoadScene("Village");
     }
 
+    public void Instructions()
+    {
+        instructions.SetActive(true);
+    }
 
-    public void OpenOptions()
+    public void ShowOptions()
     {
 
     }
 
-    public void CloseOptions()
+    public void Credits()
     {
-
+        credits.SetActive(true);
     }
 
     public void Quit()
@@ -60,6 +54,27 @@ public class startMenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void CloseStartForm()
+    {
+        if (startForm.activeInHierarchy == true)
+        {
+            startForm.SetActive(false);
+        }
+    }
+    public void CloseInstructions()
+    {
+        if (instructions.activeInHierarchy == true)
+        {
+            instructions.SetActive(false);
+        }
+    }
 
+    public void CloseCredits()
+    {
+        if (credits.activeInHierarchy == true)
+        {
+            credits.SetActive(false);
+        }
+    }
 
 }
