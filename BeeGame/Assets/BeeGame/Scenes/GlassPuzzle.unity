@@ -1612,6 +1612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: GameData.game
+  encryptionEnabled: 0
 --- !u!1 &767049908
 GameObject:
   m_ObjectHideFlags: 0
@@ -2316,6 +2317,7 @@ MonoBehaviour:
   - {fileID: 535846028}
   - {fileID: 1761681176}
   winMessage: {fileID: 103215264}
+  puzzleID: 1
 --- !u!4 &1167763625
 Transform:
   m_ObjectHideFlags: 0

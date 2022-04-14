@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
-public class PuzzleLogic : MonoBehaviour
+public class PuzzleLogic : MonoBehaviour, IDataManagement
 {
     public GameObject[] puzzlePieces;
     public GameObject winMessage;
+    public GameObject puzzleDisplay;
+
+    [SerializeField]
+    private int puzzleID;
 
     private int total;
     private int pointCounter;
@@ -86,6 +91,27 @@ public class PuzzleLogic : MonoBehaviour
         winMessage.SetActive(true);
         PointsManager.playerPoints++;
         Debug.Log("Player Points" + PointsManager.playerPoints);
+    }
+
+    public void LoadData(GameData data)
+    {
+        data.puzzles.TryGetValue(puzzleID, out finish);
+        if (finish == true)
+        {
+            this.gameObject.SetActive(false);
+            
+
+        }
+    }
+
+    public void SaveData(GameData data)
+    {
+        if (data.puzzles.ContainsKey(puzzleID))
+        {
+            data.puzzles.Remove(puzzleID);
+        }
+
+        data.puzzles.Add(puzzleID, finish);
     }
 
 }

@@ -8,6 +8,10 @@ public class DisplayPuzzle : MonoBehaviour
     private bool playerInRange;
     public string sceneName;
     public GameObject prompt;
+    public int puzzleDisplayID;
+    public bool notActive;
+
+
 
     private void Start()
     {
@@ -18,6 +22,8 @@ public class DisplayPuzzle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         if (playerInRange == true)
         {
             prompt.SetActive(true);
@@ -31,6 +37,13 @@ public class DisplayPuzzle : MonoBehaviour
         {
             prompt.SetActive(false);
         }
+
+    }
+
+    public void CheckPuzzleStatus()
+    {
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

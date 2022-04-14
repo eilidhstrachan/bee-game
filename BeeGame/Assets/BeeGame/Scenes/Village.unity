@@ -89544,7 +89544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileName: GameData.game
-  encryptionEnabled: 1
+  encryptionEnabled: 0
 --- !u!1 &1229150091
 GameObject:
   m_ObjectHideFlags: 0
@@ -98326,6 +98326,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: GlassPuzzle
   prompt: {fileID: 2066218208}
+  puzzleDisplayID: 1
+  notActive: 0
+  data:
+    puzzlePoints: 0
+    playerPosition: {x: 0, y: 0, z: 0}
+    flowers:
+      keys: 
+      values: 
+    puzzles:
+      keys: 
+      values: 
 --- !u!1 &1830730624
 GameObject:
   m_ObjectHideFlags: 0
