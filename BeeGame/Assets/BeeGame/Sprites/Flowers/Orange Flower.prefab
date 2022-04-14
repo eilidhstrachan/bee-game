@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 8239835256520920237}
   - component: {fileID: 8239835256520920239}
   - component: {fileID: 8239835256520920238}
+  - component: {fileID: 7273922239040490561}
   m_Layer: 0
   m_Name: Orange Flower
   m_TagString: Flower
@@ -179,10 +180,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 510974a61ffc8094aa77588e5cd0d948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flower: {fileID: 8239835256520920234}
   bookSpace: {fileID: 0}
   bookButton: {fileID: 0}
+  flower: {fileID: 8239835256520920234}
   prompt: {fileID: 8239835255824011640}
+  encyclopaedia: {fileID: 0}
   soundEffect: {fileID: 8300000, guid: 57413244c86acfe4490642ce9aa54d42, type: 3}
   playerInRange: 0
 --- !u!70 &8239835256520920238
@@ -201,3 +203,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0010201335, y: -0.09717822}
   m_Size: {x: 4.1193824, y: 4.3888044}
   m_Direction: 0
+--- !u!114 &7273922239040490561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8239835256520920234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 510974a61ffc8094aa77588e5cd0d948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bookSpace: {fileID: 0}
+  bookButton: {fileID: 0}
+  flower: {fileID: 0}
+  prompt: {fileID: 0}
+  encyclopaedia: {fileID: 0}
+  soundEffect: {fileID: 0}
+  playerInRange: 0

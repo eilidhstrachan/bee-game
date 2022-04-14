@@ -9,11 +9,14 @@ public class FileHandler
 {
     private string directoryPath = "";
     private string fileName = "";
+    private readonly string encryptionKey = "sea";
+    private bool encryptionEnabled = false;
 
-    public FileHandler(string directoryPath, string fileName)
+    public FileHandler(string directoryPath, string fileName, bool encryptionEnabled)
     {
         this.directoryPath = directoryPath;
         this.fileName = fileName;
+        this.encryptionEnabled = encryptionEnabled;
     }
 
     public void Save(GameData data)
@@ -24,6 +27,11 @@ public class FileHandler
             Directory.CreateDirectory(Path.GetDirectoryName(path));
 
             string saveData = JsonUtility.ToJson(data, true);
+
+            if (encryptionEnabled == true)
+            {
+                saveData = Encryption(saveData);
+            }
 
             using (FileStream stream = new FileStream(path, FileMode.Create))
             {
@@ -54,6 +62,11 @@ public class FileHandler
                 }
             }
 
+            if (encryptionEnabled == true)
+            {
+                dataToLoad = Encryption(dataToLoad);
+            }
+
             loadData = JsonUtility.FromJson<GameData>(dataToLoad);
 
         }
@@ -62,6 +75,16 @@ public class FileHandler
             Debug.LogError("Found error when attempting to save to file: " + path + "\n" + e);
         }
         return loadData;
+    }
+
+    private string Encryption(string data)
+    {
+        string encryptedData = "";
+        for (int i = 0; i < data.Length; i++)
+        {
+            encryptedData += (char)(data[i] ^ encryptionKey[i % encryptionKey.Length]);
+        }
+        return encryptedData;
     }
 
 }

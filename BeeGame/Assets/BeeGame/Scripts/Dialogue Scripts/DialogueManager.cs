@@ -82,7 +82,7 @@ public class DialogueManager : MonoBehaviour
         if (makingChoice == false)
         {
             Debug.Log("not making choice");
-            if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && dialogueIsRunning == true)
+            if ((Input.GetMouseButtonDown(0)) && dialogueIsRunning == true)
             {
                 ContinueStory();
             }
@@ -93,10 +93,11 @@ public class DialogueManager : MonoBehaviour
             if (choiceMade == true)
             {
                 Debug.Log("Choice is made");
+                /*
                 if (Input.GetKeyDown(KeyCode.Space) && dialogueIsRunning == true)
                 {
                     ContinueStory();
-                }
+                }*/
             }
         }
     }

@@ -4,10 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-    public class flowerPickup : MonoBehaviour
-    {
+    public class FlowerPickup : MonoBehaviour, IDataManagement
+{
         //public Image inventoryItem; test code
         //public Sprite flowerSprite;
+
+        public int flowerID;
+        
         public GameObject bookSpace;
         public GameObject bookButton;
         public GameObject flower;
@@ -17,6 +20,7 @@ using TMPro;
         public AudioClip soundEffect;
 
         public bool playerInRange;
+        public bool isPickedUp = false;
 
         // Start is called before the first frame update
         void Start()
@@ -33,6 +37,7 @@ using TMPro;
         {
             if (playerInRange == true && Input.GetKeyDown(KeyCode.Space))
             {
+                isPickedUp = true;
                 AudioSource.PlayClipAtPoint(soundEffect, transform.position);
                 flower.SetActive(false);
                 prompt.SetActive(false);
@@ -69,5 +74,25 @@ using TMPro;
             }
         }
 
+    public void LoadData(GameData data)
+    {
+        data.flowers.TryGetValue(flowerID, out isPickedUp);
+        if (isPickedUp == true)
+        {
+            flower.SetActive(false);
+            bookSpace.SetActive(false);
+            bookButton.SetActive(true);
+        }
     }
+
+    public void SaveData(GameData data)
+    {
+        if (data.flowers.ContainsKey(flowerID))
+        {
+            data.flowers.Remove(flowerID);
+        }
+
+        data.flowers.Add(flowerID, isPickedUp);
+    }
+}
 

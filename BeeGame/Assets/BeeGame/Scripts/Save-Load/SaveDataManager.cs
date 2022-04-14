@@ -11,6 +11,7 @@ public class SaveDataManager : MonoBehaviour
 {
     [Header("File Storage Configuration")]
     [SerializeField] private string fileName;
+    [SerializeField] private bool encryptionEnabled;
 
     private FileHandler fileHandler;
     private GameData gameData;
@@ -34,7 +35,7 @@ public class SaveDataManager : MonoBehaviour
 
     private void Start()
     {
-        this.fileHandler = new FileHandler(Application.persistentDataPath, fileName);
+        this.fileHandler = new FileHandler(Application.persistentDataPath, fileName, encryptionEnabled);
         this.dataManagementObjects = FindAllDataManagementObjects();
         LoadGame();
     }
