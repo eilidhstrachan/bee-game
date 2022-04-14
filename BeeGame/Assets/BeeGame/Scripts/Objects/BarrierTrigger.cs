@@ -8,6 +8,7 @@ public class BarrierTrigger : MonoBehaviour
     public int requiredPoints;
     public GameObject prompt;
     public TextMeshProUGUI tagText;
+    public TextMeshProUGUI points;
 
     private bool playerInRange;
 
@@ -25,6 +26,7 @@ public class BarrierTrigger : MonoBehaviour
     {
         if (playerInRange == true)
         {
+            Debug.Log("Points = "+ int.Parse(points.text));
             prompt.SetActive(true);
             if (Input.GetKeyDown(KeyCode.F))
             {
@@ -38,7 +40,7 @@ public class BarrierTrigger : MonoBehaviour
             prompt.SetActive(false);
         }
 
-        if (PointsManager.playerPoints >= 2)
+        if (int.Parse(points.text) >= requiredPoints)
         {
             this.gameObject.SetActive(false);
         }

@@ -96,12 +96,12 @@ public class PuzzleLogic : MonoBehaviour, IDataManagement
     public void LoadData(GameData data)
     {
         data.puzzles.TryGetValue(puzzleID, out finish);
-        if (finish == true)
-        {
-            this.gameObject.SetActive(false);
+        //if (finish == true)
+        //{
+            //this.gameObject.SetActive(false);
             
 
-        }
+        //}
     }
 
     public void SaveData(GameData data)

@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
 
 
 
+
     //public void AddPuzzlePoints()
     //{
     //app.model.player.puzzlePoints++;

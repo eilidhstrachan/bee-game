@@ -11,13 +11,7 @@ public class PointsManager : MonoBehaviour, IDataManagement
     // Update is called once per frame
     void Update()
     {
-        /*
-        if (playerPoints > 0)
-        {
-            Debug.Log("Player Points = " + playerPoints);
-        } */
-       
-        //pointsDisplay.text = playerPoints.ToString();
+        
     }
 
     public void LoadData(GameData data)
