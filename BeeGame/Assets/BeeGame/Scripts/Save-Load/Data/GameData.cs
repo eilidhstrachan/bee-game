@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class GameData
 {
+    public bool letterRead;
     public int puzzlePoints;
     public Vector3 playerPosition;
     public SerializeDictionary<int, bool> flowers;
@@ -14,6 +15,7 @@ public class GameData
     // a previous save file
     public GameData()
     {
+        letterRead = false;
         this.puzzlePoints = 0;
         this.playerPosition = Vector3.zero;
         flowers = new SerializeDictionary<int, bool>();

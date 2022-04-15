@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
     public class FlowerPickup : MonoBehaviour, IDataManagement
-{
+    {
         //public Image inventoryItem; test code
         //public Sprite flowerSprite;
+
+        public static event Action OnFlowerPickup;
 
         public int flowerID;
         
@@ -17,7 +20,7 @@ using TMPro;
         public GameObject prompt;
         public GameObject encyclopaedia;
 
-        public AudioClip soundEffect;
+        //public AudioClip soundEffect;
 
         public bool playerInRange;
         public bool isPickedUp = false;
@@ -37,8 +40,9 @@ using TMPro;
         {
             if (playerInRange == true && Input.GetKeyDown(KeyCode.Space))
             {
+                OnFlowerPickup?.Invoke();
                 isPickedUp = true;
-                AudioSource.PlayClipAtPoint(soundEffect, transform.position);
+                //AudioSource.PlayClipAtPoint(soundEffect, transform.position);
                 flower.SetActive(false);
                 prompt.SetActive(false);
                 bookSpace.SetActive(false);

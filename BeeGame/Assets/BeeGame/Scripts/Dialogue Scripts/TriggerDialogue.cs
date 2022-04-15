@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-// the base for this code was made with the help of https://www.youtube.com/watch?v=vY0Sk93YUhA by Trevor Mock and then built upon by myself
+// acts as a basic trigger for NPCs to start their dialogue. Incorporates some logic to decide which ink dialogue file the NPCs should use based on where the player is in the game
+// such as by using the amount of puzzle points they have collected or the amount of flowers they have collected. 
 public class TriggerDialogue : MonoBehaviour
 {
     private bool playerInRange;
     public string NPCName;
     public TextMeshProUGUI nametagText;
     public GameObject prompt;
+    public TextMeshProUGUI points;
 
     [Header("Ink JSON")]
-    [SerializeField] private TextAsset inkJSON;
+    [SerializeField] private TextAsset inkJSON1;
+    [SerializeField] private TextAsset inkJSON2;
 
     void Awake()
     {
@@ -32,7 +35,14 @@ public class TriggerDialogue : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 nametagText.text = NPCName;
-                DialogueManager.GetInstance().StartDialogue(inkJSON);
+                if (int.Parse(points.text) == 0)
+                {
+                    DialogueManager.GetInstance().StartDialogue(inkJSON1);
+                }
+                else
+                {
+                    DialogueManager.GetInstance().StartDialogue(inkJSON2);
+                }
                 prompt.SetActive(false);
             }
             else
