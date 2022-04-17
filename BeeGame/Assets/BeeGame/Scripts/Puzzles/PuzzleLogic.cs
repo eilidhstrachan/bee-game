@@ -43,23 +43,23 @@ public class PuzzleLogic : MonoBehaviour, IDataManagement
     // Update is called once per frame
     void Update()
     {
-
         if (isComplete == false)
         {
             CheckPiece();
             CheckIfComplete();
         }
-        
+
         if (isComplete == true && finish == false)
         {
             PuzzleCompleted();
             finish = true;
-        }    
-        
+        }
+
         if (isComplete == true && finish == true)
         {
             return;
         }
+
 
     }
 

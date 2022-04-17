@@ -6,26 +6,30 @@ using System;
 
 // acts as a basic trigger for NPCs to start their dialogue. Incorporates some logic to decide which ink dialogue file the NPCs should use based on where the player is in the game
 // such as by using the amount of puzzle points they have collected or the amount of flowers they have collected. 
-public class TriggerDialogue : MonoBehaviour
+public class TriggerDialogue : MonoBehaviour, IDataManagement
 {
     //public static event Action OnPointsIncreased;
 
-    private bool playerInRange;
+    public int npcID;
     public string NPCName;
+    private bool playerInRange;
     public TextMeshProUGUI nametagText;
     public GameObject prompt;
     public TextMeshProUGUI pointsDisplay;
+    public bool introsHeard;
+
     public int npcPoints;
-    private int tempPoints;
+    //private int tempPoints;
     //public GameObject displayManager;
 
     [Header("Ink JSON")]
-    [SerializeField] private TextAsset inkJSON1;
-    [SerializeField] private TextAsset inkJSON2;
+    [SerializeField] private TextAsset inkIntro;
+    [SerializeField] private TextAsset inkPart1;
+    [SerializeField] private TextAsset inkPart2;
+
 
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
         nametagText.text = "";
         prompt.SetActive(false);
         playerInRange = false;
@@ -43,19 +47,32 @@ public class TriggerDialogue : MonoBehaviour
         //OnPointsIncreased?.Invoke();
         //}
 
+        DialogueLogic();
+
+    }
+
+    //int.Parse(pointsDisplay.text)
+    private void DialogueLogic()
+    {
         if (playerInRange && !DialogueManager.GetInstance().dialogueIsRunning)
         {
+            Debug.Log("npc points is equal to = " + npcPoints);
             prompt.SetActive(true);
             if (Input.GetKeyDown(KeyCode.F))
             {
                 nametagText.text = NPCName;
-                if (int.Parse(pointsDisplay.text) == 0)
+                if (introsHeard == false)
                 {
-                    DialogueManager.GetInstance().StartDialogue(inkJSON1);
+                    //DialogueManager.GetInstance().StartDialogue(inkIntro);
+                    IntroStoryLogic();
+                }
+                else if (npcPoints < 2 && introsHeard == true)
+                {
+                    DialogueManager.GetInstance().StartDialogue(inkPart1);
                 }
                 else
                 {
-                    DialogueManager.GetInstance().StartDialogue(inkJSON2);
+                    DialogueManager.GetInstance().StartDialogue(inkPart2);
                 }
                 prompt.SetActive(false);
             }
@@ -68,7 +85,12 @@ public class TriggerDialogue : MonoBehaviour
         {
             prompt.SetActive(false);
         }
+    }
 
+    private void IntroStoryLogic()
+    {
+        DialogueManager.GetInstance().StartDialogue(inkIntro);
+        introsHeard = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -77,7 +99,7 @@ public class TriggerDialogue : MonoBehaviour
         {
             playerInRange = true;
             Debug.Log("player in range");
-            Debug.Log("NPC points = "+ npcPoints);
+            //Debug.Log("NPC points = "+ npcPoints);
         }
     }
 
@@ -88,6 +110,23 @@ public class TriggerDialogue : MonoBehaviour
             playerInRange = false;
             Debug.Log("player out of range");
         }
+    }
+
+    public void LoadData(GameData data)
+    {
+        data.npcIntro.TryGetValue(npcID, out introsHeard);
+        this.npcPoints = data.puzzlePoints;
+
+    }
+
+    public void SaveData(GameData data)
+    {
+        if (data.npcIntro.ContainsKey(npcID))
+        {
+            data.npcIntro.Remove(npcID);
+        }
+
+        data.npcIntro.Add(npcID, introsHeard);
     }
 
     /*

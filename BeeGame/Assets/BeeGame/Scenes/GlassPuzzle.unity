@@ -181,7 +181,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 8274375662622558155, guid: 86ec4f8efd8ef2a4d80bb5345ecaf05e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -243,10 +243,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 83113897}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41ced2d8293f6524e9c7415bc28d92fd, type: 3}
+  m_Script: {fileID: 11500000, guid: f2b4712b86cfc4847b9829c6e4ee47ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingSpace: {fileID: 767049908}
+  sensitivity: 0.05
+  correspondingSpace:
+  - {fileID: 767049908}
   isPlaced: 0
 --- !u!1 &103215264
 GameObject:
@@ -382,7 +384,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -7647130927745093953, guid: 86ec4f8efd8ef2a4d80bb5345ecaf05e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -444,10 +446,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 169165782}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41ced2d8293f6524e9c7415bc28d92fd, type: 3}
+  m_Script: {fileID: 11500000, guid: f2b4712b86cfc4847b9829c6e4ee47ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingSpace: {fileID: 182925639}
+  sensitivity: 0.05
+  correspondingSpace:
+  - {fileID: 182925639}
   isPlaced: 0
 --- !u!1 &182925639
 GameObject:
@@ -928,7 +932,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -6050437406666978390, guid: 86ec4f8efd8ef2a4d80bb5345ecaf05e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -990,10 +994,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 436987172}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41ced2d8293f6524e9c7415bc28d92fd, type: 3}
+  m_Script: {fileID: 11500000, guid: f2b4712b86cfc4847b9829c6e4ee47ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingSpace: {fileID: 1418149459}
+  sensitivity: 0.05
+  correspondingSpace:
+  - {fileID: 1418149459}
   isPlaced: 0
 --- !u!1 &448338974
 GameObject:
@@ -1250,7 +1256,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 2037634421552267372, guid: 86ec4f8efd8ef2a4d80bb5345ecaf05e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1312,10 +1318,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 535846028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41ced2d8293f6524e9c7415bc28d92fd, type: 3}
+  m_Script: {fileID: 11500000, guid: f2b4712b86cfc4847b9829c6e4ee47ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingSpace: {fileID: 1513701278}
+  sensitivity: 0.05
+  correspondingSpace:
+  - {fileID: 1513701278}
   isPlaced: 0
 --- !u!1 &690469687
 GameObject:
@@ -1501,7 +1509,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 9146587754032799837, guid: 86ec4f8efd8ef2a4d80bb5345ecaf05e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1563,10 +1571,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 721318502}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41ced2d8293f6524e9c7415bc28d92fd, type: 3}
+  m_Script: {fileID: 11500000, guid: f2b4712b86cfc4847b9829c6e4ee47ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingSpace: {fileID: 1958073946}
+  sensitivity: 0.05
+  correspondingSpace:
+  - {fileID: 1958073946}
   isPlaced: 0
 --- !u!1 &746499080
 GameObject:
@@ -2317,6 +2327,7 @@ MonoBehaviour:
   - {fileID: 535846028}
   - {fileID: 1761681176}
   winMessage: {fileID: 103215264}
+  puzzleDisplay: {fileID: 0}
   puzzleID: 1
 --- !u!4 &1167763625
 Transform:
@@ -3084,7 +3095,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 1572886120501317263, guid: 86ec4f8efd8ef2a4d80bb5345ecaf05e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3146,10 +3157,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1589311333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41ced2d8293f6524e9c7415bc28d92fd, type: 3}
+  m_Script: {fileID: 11500000, guid: f2b4712b86cfc4847b9829c6e4ee47ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingSpace: {fileID: 690469687}
+  sensitivity: 0.05
+  correspondingSpace:
+  - {fileID: 690469687}
   isPlaced: 0
 --- !u!1 &1656301137
 GameObject:
@@ -3209,7 +3222,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -5866522932363346579, guid: 86ec4f8efd8ef2a4d80bb5345ecaf05e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3271,10 +3284,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1656301137}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41ced2d8293f6524e9c7415bc28d92fd, type: 3}
+  m_Script: {fileID: 11500000, guid: f2b4712b86cfc4847b9829c6e4ee47ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingSpace: {fileID: 1712429368}
+  sensitivity: 0.05
+  correspondingSpace:
+  - {fileID: 1712429368}
   isPlaced: 0
 --- !u!1 &1675425045
 GameObject:
@@ -3633,7 +3648,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -971758426349586530, guid: 86ec4f8efd8ef2a4d80bb5345ecaf05e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3695,10 +3710,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1761681176}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41ced2d8293f6524e9c7415bc28d92fd, type: 3}
+  m_Script: {fileID: 11500000, guid: f2b4712b86cfc4847b9829c6e4ee47ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correspondingSpace: {fileID: 1975697495}
+  sensitivity: 0.05
+  correspondingSpace:
+  - {fileID: 1975697495}
   isPlaced: 0
 --- !u!1 &1864587769
 GameObject:

@@ -93,6 +93,7 @@ public class DialogueManager : MonoBehaviour
             if (choiceMade == true)
             {
                 Debug.Log("Choice is made");
+                //ContinueStory();
                 /*
                 if (Input.GetKeyDown(KeyCode.Space) && dialogueIsRunning == true)
                 {

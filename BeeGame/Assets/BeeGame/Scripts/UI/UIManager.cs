@@ -6,14 +6,14 @@ public class UIManager : MonoBehaviour, IDataManagement
 {
     public GameObject optionsMenu;
     public GameObject mayorLetter;
-    public bool isLetterRead = false;
+    public bool isLetterRead;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (mayorLetter.activeInHierarchy == false && isLetterRead == false)
+        if (mayorLetter.activeInHierarchy == true)
         {
-            mayorLetter.SetActive(true);
+            mayorLetter.SetActive(false);
         }
 
         if (optionsMenu.activeInHierarchy == true)
@@ -25,7 +25,10 @@ public class UIManager : MonoBehaviour, IDataManagement
     // Update is called once per frame
     void Update()
     {
-        
+        if (mayorLetter.activeInHierarchy == false && isLetterRead == false)
+        {
+            mayorLetter.SetActive(true);
+        }
     }
 
     public void OnLetterExit()

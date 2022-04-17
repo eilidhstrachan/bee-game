@@ -12,29 +12,41 @@ public class PieceMovement : MonoBehaviour
     private float startPosX;
     private float startPosY;
 
-    public GameObject correspondingSpace;
+    public float sensitivity;
+    public List<GameObject> correspondingSpace;
     public bool isPlaced;
 
     // Start is called before the first frame update
     void Start()
     {
         isPlaced = false;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isPlaced == false)
+        //if (isPlaced == false) this code makes it so that once a piece is in the right place, it cannot be moved again
+        //{
+        if (isMoving == true)
         {
-            if (isMoving == true)
-            {
-                Vector3 mousePos;
-                mousePos = Input.mousePosition;
-                mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+            gameObject.GetComponent<Renderer>().sortingOrder = 4;
+            Vector3 mousePos;
+            mousePos = Input.mousePosition;
+            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-                this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, this.gameObject.transform.localPosition.z);
-            }
+            this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, this.gameObject.transform.localPosition.z);
         }
+
+        if (isPlaced == true)
+        {
+            gameObject.GetComponent<Renderer>().sortingOrder = 2;
+        }
+        else if (isPlaced == false && isMoving == false)
+        {
+            gameObject.GetComponent<Renderer>().sortingOrder = 3;
+        }
+        //}
 
     }
 
@@ -57,11 +69,15 @@ public class PieceMovement : MonoBehaviour
     {
         isMoving = false;
 
-        if (Mathf.Abs(this.transform.localPosition.x - correspondingSpace.transform.localPosition.x) <= 0.05f && Mathf.Abs(this.transform.localPosition.y - correspondingSpace.transform.localPosition.y) <= 0.05f)
+        for (int i = 0; i < correspondingSpace.Count; i++)
         {
-            this.transform.position = new Vector3(correspondingSpace.transform.position.x, correspondingSpace.transform.position.y, correspondingSpace.transform.position.z);
-            isPlaced = true;
-            
+            if (Mathf.Abs(this.transform.localPosition.x - correspondingSpace[i].transform.localPosition.x) <= sensitivity && Mathf.Abs(this.transform.localPosition.y - correspondingSpace[i].transform.localPosition.y) <= sensitivity)
+            {
+                this.transform.position = new Vector3(correspondingSpace[i].transform.position.x, correspondingSpace[i].transform.position.y, correspondingSpace[i].transform.position.z);
+                isPlaced = true;
+
+            }
         }
+
     }
 }

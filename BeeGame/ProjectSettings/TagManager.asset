@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Flower
   - TextMesh
+  - Yellow Piece
+  - Blue Piece
+  - Red Piece
   layers:
   - Default
   - TransparentFX

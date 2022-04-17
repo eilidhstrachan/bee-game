@@ -19,13 +19,14 @@ public class FontManager : MonoBehaviour
             component.font = readableFont;
         }
 
+        /*
         tmpObjects = GameObject.FindGameObjectsWithTag("TextMesh");
         foreach (GameObject tmp in tmpObjects)
         {
             TextMeshPro b = tmp.GetComponent<TextMeshPro>();
             b.font = tmpReadable;
 
-        }
+        }*/
 
         /*
         var tmpComponents = Component.FindObjectOfType<TextMeshProUGUI>(true);
