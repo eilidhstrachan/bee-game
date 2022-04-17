@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PuzzleLogic : MonoBehaviour, IDataManagement
 {
+
     public GameObject[] puzzlePieces;
     public GameObject winMessage;
     public GameObject puzzleDisplay;

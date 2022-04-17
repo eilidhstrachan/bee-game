@@ -22,11 +22,13 @@ public class PickupAudioPlayer : MonoBehaviour
     private void OnEnable()
     {
         FlowerPickup.OnFlowerPickup += PlaySoundEffect;
+        PieceMovement.OnPiecePlaced += PlaySoundEffect;
     }
 
     private void OnDisable()
     {
         FlowerPickup.OnFlowerPickup -= PlaySoundEffect;
+        PieceMovement.OnPiecePlaced -= PlaySoundEffect;
     }
 
 }

@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 // piece movement code from https://www.youtube.com/watch?v=uk_E_cGrlQc,
 // Drag and Drop System in Unity - Puzzle Game Example (PC and Mobile) by GameDevel on YouTube
 public class PieceMovement : MonoBehaviour
 {
+    public static Action OnPiecePlaced;
 
     private bool isMoving;
 
@@ -73,6 +75,7 @@ public class PieceMovement : MonoBehaviour
         {
             if (Mathf.Abs(this.transform.localPosition.x - correspondingSpace[i].transform.localPosition.x) <= sensitivity && Mathf.Abs(this.transform.localPosition.y - correspondingSpace[i].transform.localPosition.y) <= sensitivity)
             {
+                OnPiecePlaced?.Invoke();
                 this.transform.position = new Vector3(correspondingSpace[i].transform.position.x, correspondingSpace[i].transform.position.y, correspondingSpace[i].transform.position.z);
                 isPlaced = true;
 

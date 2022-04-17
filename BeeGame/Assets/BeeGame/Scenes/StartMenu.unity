@@ -449,7 +449,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &236893437
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2253,7 +2253,8 @@ MonoBehaviour:
     keys - https://beamedeighth.itch.io/simplekeys-animated-pixel-keyboard-keys\r\n\u2022
     Plants and Flowers \u2013 Pixel Art by peony - https://opengameart.org/content/plants-and-flowers-pixel-art
     \r\n\u2022 Free Pixelart Clouds Background - https://s4m-ur4i.itch.io/pixelart-clouds-background
-    \n\nMusic:\n\u2022 The Beginning (w Caturday) by Babasmas - https://www.chosic.com/download-audio/29771/\n\u2022
+    \n\nMusic:\n\u2022 All sound effects from Mixkit.com (Player jumping in a video
+    game, Game ball tap)\n\u2022 The Beginning (w Caturday) by Babasmas - https://www.chosic.com/download-audio/29771/\n\u2022
     Guitar Gentle by Peritune - https://www.chosic.com/download-audio/29514/ \n\u2022
     Acoustic Breeze by Bensound - https://www.bensound.com/royalty-free-music/track/acoustic-breeze
     \r\n\nInspired by the Professor Layton series by Level-5 and Nintendo!"
@@ -2284,8 +2285,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38
-  m_fontSizeBase: 38
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
