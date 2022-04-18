@@ -56,7 +56,7 @@ public class TriggerDialogue : MonoBehaviour, IDataManagement
     {
         if (playerInRange && !DialogueManager.GetInstance().dialogueIsRunning)
         {
-            Debug.Log("npc points is equal to = " + npcPoints);
+            //Debug.Log("npc points is equal to = " + npcPoints);
             prompt.SetActive(true);
             if (Input.GetKeyDown(KeyCode.F))
             {

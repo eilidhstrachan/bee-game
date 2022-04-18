@@ -25,6 +25,8 @@ public class DialogueManager : MonoBehaviour
     private bool makingChoice;
     private bool choiceMade;
 
+    private DialogueValues dialogueValues;
+
     public bool dialogueIsRunning { get; private set; }
 
     private void Awake()
@@ -35,6 +37,8 @@ public class DialogueManager : MonoBehaviour
         }
 
         instance = this;
+
+        dialogueValues = new DialogueValues();
     }
 
     public static DialogueManager GetInstance()
@@ -81,7 +85,7 @@ public class DialogueManager : MonoBehaviour
         // code added so that mouse button can be used to click on the choice UI buttons when choices are active
         if (makingChoice == false)
         {
-            Debug.Log("not making choice");
+            //Debug.Log("not making choice");
             if ((Input.GetMouseButtonDown(0)) && dialogueIsRunning == true)
             {
                 ContinueStory();
@@ -89,7 +93,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("making choice");
+            //Debug.Log("making choice");
             if (choiceMade == true)
             {
                 Debug.Log("Choice is made");
@@ -110,6 +114,8 @@ public class DialogueManager : MonoBehaviour
         dialogueBox.SetActive(true);
         nametag.SetActive(true);
 
+        dialogueValues.ObserverEnabled(currentItem);
+
         ContinueStory();
     }
 
@@ -121,6 +127,8 @@ public class DialogueManager : MonoBehaviour
         dialogueBox.SetActive(false);
         dialogueText.text = "";
         nametag.SetActive(false);
+
+        dialogueValues.ObserverDisabled(currentItem);
     }
 
     private void ContinueStory()
