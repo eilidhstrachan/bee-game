@@ -5,7 +5,8 @@ using UnityEngine;
 public class BeeManager : MonoBehaviour
 {
     public List<GameObject> bees;
-    public List<GameObject> flowers;
+    public List<GameObject> flowerItems;
+    public List<GameObject> flowerObjects;
 
     public void Awake()
     {
@@ -13,16 +14,22 @@ public class BeeManager : MonoBehaviour
         {
             bees[i].SetActive(false);
         }
+
+        for (int i = 0; i < flowerObjects.Count; i++)
+        {
+            flowerObjects[i].SetActive(false);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        for (int i = 0; i < flowers.Count; i++)
+        for (int i = 0; i < flowerItems.Count; i++)
         { 
-            if (flowers[i].activeInHierarchy == false)
+            if (flowerItems[i].activeInHierarchy == false)
             {
                 bees[i].SetActive(true);
+                flowerObjects[i].SetActive(true);
             }
         }
     }

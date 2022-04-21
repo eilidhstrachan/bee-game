@@ -87,6 +87,12 @@ using System;
             bookSpace.SetActive(false);
             bookButton.SetActive(true);
         }
+        else
+        {
+            flower.SetActive(true);
+            bookSpace.SetActive(true);
+            bookButton.SetActive(false);
+        }
     }
 
     public void SaveData(GameData data)
