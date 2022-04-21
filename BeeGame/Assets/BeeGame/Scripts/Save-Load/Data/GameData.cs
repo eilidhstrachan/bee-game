@@ -12,6 +12,7 @@ public class GameData
     public Vector3 playerPosition;
     public SerializeDictionary<int, bool> flowers;
     public SerializeDictionary<int, bool> puzzles;
+    public string npcPuzzle;
     public SerializeDictionary<int, bool> npcIntro;
 
 
@@ -25,6 +26,7 @@ public class GameData
         this.puzzlePoints = 0;
         this.playerPosition = Vector3.zero;
         flowers = new SerializeDictionary<int, bool>();
+        npcPuzzle = "";
         puzzles = new SerializeDictionary<int, bool>();
         npcIntro = new SerializeDictionary<int, bool>();
     }

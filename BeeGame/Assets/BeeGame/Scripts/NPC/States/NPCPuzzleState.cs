@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NPCPuzzleState : NPCBaseState
 {
+
     public override void EnterState(NPCStateManager npc)
     {
         Debug.Log(npc.GetComponent<NPCStateManager>().NPCName + " has entered the puzzle state");
@@ -12,6 +14,14 @@ public class NPCPuzzleState : NPCBaseState
         if (npc.GetComponent<NPCStateManager>().playerInRange == false)
         {
             npc.ChangeState(npc.IdleState);
+        }
+
+        if (DialogueValues.choice.Equals("yes") && !DialogueManager.GetInstance().dialogueIsRunning)
+        {
+            Debug.Log("NPCPuzzleState says that choice is equal to yes");
+            DialogueValues.choice = "no";
+            npc.ChangeState(npc.ActivePuzzle);
+
         }
 
         if (!DialogueManager.GetInstance().dialogueIsRunning)

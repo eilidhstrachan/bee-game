@@ -3,20 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System;
 
 public class PuzzleLogic : MonoBehaviour, IDataManagement
 {
+    public static Action OnPuzzleCompleted;
 
     public GameObject[] puzzlePieces;
     public GameObject winMessage;
     public GameObject puzzleDisplay;
 
-    [SerializeField]
-    private int puzzleID;
+    public int puzzleID;
 
     private int total;
     private int pointCounter;
-    private bool isComplete;
+    public static bool isComplete;
     private bool[] toCheck;
     private bool finish;
 
@@ -24,6 +25,7 @@ public class PuzzleLogic : MonoBehaviour, IDataManagement
     // Start is called before the first frame update
     void Start()
     {
+
         winMessage.SetActive(false);
 
         isComplete = false;
@@ -52,8 +54,11 @@ public class PuzzleLogic : MonoBehaviour, IDataManagement
 
         if (isComplete == true && finish == false)
         {
+
+            OnPuzzleCompleted?.Invoke();
             PuzzleCompleted();
             finish = true;
+            
         }
 
         if (isComplete == true && finish == true)
@@ -97,12 +102,12 @@ public class PuzzleLogic : MonoBehaviour, IDataManagement
     public void LoadData(GameData data)
     {
         data.puzzles.TryGetValue(puzzleID, out finish);
-        //if (finish == true)
-        //{
-            //this.gameObject.SetActive(false);
+        if (finish == true)
+        {
+            this.gameObject.SetActive(false);
             
 
-        //}
+        }
     }
 
     public void SaveData(GameData data)

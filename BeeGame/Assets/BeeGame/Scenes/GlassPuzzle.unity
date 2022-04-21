@@ -2468,7 +2468,7 @@ MonoBehaviour:
   - {fileID: 1761681176}
   winMessage: {fileID: 103215264}
   puzzleDisplay: {fileID: 0}
-  puzzleID: 1
+  puzzleID: 6
 --- !u!4 &1167763625
 Transform:
   m_ObjectHideFlags: 0

@@ -16,6 +16,8 @@ public class NPCStateManager : MonoBehaviour, IDataManagement
     public int npcPoints;
 
     public bool hasPuzzle;
+    private bool puzzleCompleted;
+    public string scene = "";
 
     [Header("Ink JSON")]
     public TextAsset inkIntro;
@@ -30,6 +32,7 @@ public class NPCStateManager : MonoBehaviour, IDataManagement
     public NPCPart1State Part1State = new NPCPart1State();
     public NPCPart2State Part2State = new NPCPart2State();
     public NPCPuzzleState PuzzleState = new NPCPuzzleState();
+    public NPCActivePuzzle ActivePuzzle = new NPCActivePuzzle();
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +46,10 @@ public class NPCStateManager : MonoBehaviour, IDataManagement
     // Update is called once per frame
     void Update()
     {
+        if (puzzleCompleted == true)
+        {
+            hasPuzzle = false;
+        }
         currentState.UpdateState(this);
     }
 
@@ -75,6 +82,7 @@ public class NPCStateManager : MonoBehaviour, IDataManagement
     {
         data.npcIntro.TryGetValue(npcID, out introsHeard);
         this.npcPoints = data.puzzlePoints;
+        data.puzzles.TryGetValue(npcID, out puzzleCompleted);
 
     }
 

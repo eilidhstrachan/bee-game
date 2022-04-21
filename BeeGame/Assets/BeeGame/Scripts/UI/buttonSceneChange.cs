@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class ButtonSceneChange : MonoBehaviour
 {
@@ -12,4 +13,5 @@ public class ButtonSceneChange : MonoBehaviour
         SceneManager.LoadScene(scene);
         SaveDataManager.instance.SaveGame();
     }
+
 }

@@ -27,6 +27,7 @@ public class DialogueManager : MonoBehaviour
 
     private DialogueValues dialogueValues;
 
+
     public bool dialogueIsRunning { get; private set; }
 
     private void Awake()
@@ -88,6 +89,7 @@ public class DialogueManager : MonoBehaviour
             //Debug.Log("not making choice");
             if ((Input.GetMouseButtonDown(0)) && dialogueIsRunning == true)
             {
+                choiceMade = true;
                 ContinueStory();
             }
         }
@@ -95,8 +97,8 @@ public class DialogueManager : MonoBehaviour
         {
             //Debug.Log("making choice");
             if (choiceMade == true)
-            {
-                Debug.Log("Choice is made");
+            { 
+                
                 //ContinueStory();
                 /*
                 if (Input.GetKeyDown(KeyCode.Space) && dialogueIsRunning == true)
