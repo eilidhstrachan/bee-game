@@ -11,7 +11,7 @@ public class PuzzleLogic : MonoBehaviour, IDataManagement
 
     public GameObject[] puzzlePieces;
     public GameObject winMessage;
-    public GameObject puzzleDisplay;
+    //public GameObject puzzleDisplay;
 
     public int puzzleID;
 
@@ -105,7 +105,6 @@ public class PuzzleLogic : MonoBehaviour, IDataManagement
         if (finish == true)
         {
             this.gameObject.SetActive(false);
-            
 
         }
     }

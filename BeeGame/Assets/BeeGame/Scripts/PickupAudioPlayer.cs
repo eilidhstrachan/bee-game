@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// uses the observer design pattern to play certain audio source sounds when certain events take place
 public class PickupAudioPlayer : MonoBehaviour
 {
 

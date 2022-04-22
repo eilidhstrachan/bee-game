@@ -7,7 +7,9 @@ public class UIManager : MonoBehaviour, IDataManagement
 {
     public GameObject optionsMenu;
     public GameObject mayorLetter;
+    public GameObject startText;
     public bool isLetterRead;
+    public bool isTextRead;
 
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider soundSlider;
@@ -26,6 +28,11 @@ public class UIManager : MonoBehaviour, IDataManagement
             mayorLetter.SetActive(false);
         }
 
+        if (startText.activeInHierarchy == true)
+        {
+            startText.SetActive(false);
+        }
+
         if (optionsMenu.activeInHierarchy == true)
         {
             optionsMenu.SetActive(false);
@@ -35,9 +42,13 @@ public class UIManager : MonoBehaviour, IDataManagement
     // Update is called once per frame
     void Update()
     {
-        if (mayorLetter.activeInHierarchy == false && isLetterRead == false)
+        if (mayorLetter.activeInHierarchy == false && isTextRead == false && isLetterRead == false)
         {
             mayorLetter.SetActive(true);
+        }
+        else if (startText.activeInHierarchy == false && isTextRead == true && isLetterRead == false)
+        {
+            startText.SetActive(true);
         }
     }
 
@@ -51,10 +62,17 @@ public class UIManager : MonoBehaviour, IDataManagement
         soundEffect.volume = soundSlider.value;
     }
 
+    public void OnStartTextExit()
+    {
+        startText.SetActive(false);
+        isLetterRead = true;
+    }
+
     public void OnLetterExit()
     {
         mayorLetter.SetActive(false);
-        isLetterRead = true;
+        isTextRead = true;
+        //isLetterRead = true;
     }
 
     public void OpenOptions()
