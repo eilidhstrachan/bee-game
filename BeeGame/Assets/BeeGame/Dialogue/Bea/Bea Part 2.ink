@@ -1,0 +1,2 @@
+You're making great progress detective! I heard there's even been some bee sightings down at the flower garden! Oh this is just wonderful news.
+Finding and planting more bee friendly flowers really is starting to make a difference huh?
