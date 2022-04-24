@@ -1,0 +1,1 @@
+This book seems to have a page ripped out of it. It says "A Wizard's Guide To Magic" on the cover.

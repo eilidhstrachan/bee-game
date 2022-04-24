@@ -10,7 +10,7 @@ public class MathPuzzleLogic : MonoBehaviour, IDataManagement
     public static Action OnPuzzleCompleted;
 
     public GameObject winMessage;
-    //public GameObject puzzleDisplay;
+    public GameObject puzzleInstructions;
     public List<TMP_InputField> inputFields;
 
     public int puzzleID;
@@ -26,6 +26,7 @@ public class MathPuzzleLogic : MonoBehaviour, IDataManagement
     // Start is called before the first frame update
     void Start()
     {
+        puzzleInstructions.SetActive(true);
 
         winMessage.SetActive(false);
 

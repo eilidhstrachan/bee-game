@@ -11,7 +11,7 @@ public class PuzzleLogic : MonoBehaviour, IDataManagement
 
     public GameObject[] puzzlePieces;
     public GameObject winMessage;
-    //public GameObject puzzleDisplay;
+    public GameObject puzzleInstructions;
 
     public int puzzleID;
 
@@ -25,7 +25,7 @@ public class PuzzleLogic : MonoBehaviour, IDataManagement
     // Start is called before the first frame update
     void Start()
     {
-
+        puzzleInstructions.SetActive(true);
         winMessage.SetActive(false);
 
         isComplete = false;
