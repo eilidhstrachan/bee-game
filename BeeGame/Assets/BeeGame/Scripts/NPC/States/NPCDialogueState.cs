@@ -19,17 +19,21 @@ public class NPCDialogueState : NPCBaseState
         {
             npc.ChangeState(npc.IntroState);
         }
-        else if (npc.GetComponent<NPCStateManager>().introsHeard == true && npc.GetComponent<NPCStateManager>().npcPoints < 2 && npc.GetComponent<NPCStateManager>().hasPuzzle == false)
-        {
-            npc.ChangeState(npc.Part1State);
-        }
         else if (npc.GetComponent<NPCStateManager>().introsHeard == true && npc.GetComponent<NPCStateManager>().hasPuzzle == true)
         {
             npc.ChangeState(npc.PuzzleState);
         }
-        else if (npc.GetComponent<NPCStateManager>().introsHeard == true && npc.GetComponent<NPCStateManager>().npcPoints >= 2 && npc.GetComponent<NPCStateManager>().hasPuzzle == false)
+        else if (npc.GetComponent<NPCStateManager>().introsHeard == true && npc.GetComponent<NPCStateManager>().npcPoints < 2 && npc.GetComponent<NPCStateManager>().hasPuzzle == false)
+        {
+            npc.ChangeState(npc.Part1State);
+        }
+        else if (npc.GetComponent<NPCStateManager>().introsHeard == true && npc.GetComponent<NPCStateManager>().npcPoints >= 2 && npc.GetComponent<NPCStateManager>().npcPoints < 4 && npc.GetComponent<NPCStateManager>().hasPuzzle == false)
         {
             npc.ChangeState(npc.Part2State);
+        }
+        else if (npc.GetComponent<NPCStateManager>().introsHeard == true && npc.GetComponent<NPCStateManager>().npcPoints >= 4 && npc.GetComponent<NPCStateManager>().hasPuzzle == false)
+        {
+            npc.ChangeState(npc.Part3State);
         }
     }
 }

@@ -11,7 +11,7 @@ public class NPCIntroState : NPCBaseState
 
     public override void UpdateState(NPCStateManager npc)
     {
-        if (npc.GetComponent<NPCStateManager>().playerInRange == false)
+        if (npc.GetComponent<NPCStateManager>().playerInRange == false || npc.introsHeard == true)
         {
             npc.ChangeState(npc.IdleState);
         }
@@ -22,7 +22,6 @@ public class NPCIntroState : NPCBaseState
             if (Input.GetKeyDown(KeyCode.F))
             {
                 npc.GetComponent<NPCStateManager>().nametagText.text = npc.GetComponent<NPCStateManager>().NPCName;
-
                 npc.GetComponent<NPCStateManager>().prompt.SetActive(false);
                 DialogueManager.GetInstance().StartDialogue(npc.GetComponent<NPCStateManager>().inkIntro);
                 npc.GetComponent<NPCStateManager>().introsHeard = true;

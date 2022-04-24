@@ -1,0 +1,2 @@
+You know, the mayor says all the flowers from the village disappeared but I swear I saw some lying about around here!
+Maybe his eyesight is getting the better of him... Don't tell him I said that though. 

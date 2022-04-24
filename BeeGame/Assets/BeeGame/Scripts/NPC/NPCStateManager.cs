@@ -23,6 +23,7 @@ public class NPCStateManager : MonoBehaviour, IDataManagement
     public TextAsset inkIntro;
     public TextAsset inkPart1;
     public TextAsset inkPart2;
+    public TextAsset inkPart3;
     public TextAsset puzzleDialogue;
 
     NPCBaseState currentState;
@@ -31,6 +32,7 @@ public class NPCStateManager : MonoBehaviour, IDataManagement
     public NPCIntroState IntroState = new NPCIntroState();
     public NPCPart1State Part1State = new NPCPart1State();
     public NPCPart2State Part2State = new NPCPart2State();
+    public NPCPart3State Part3State = new NPCPart3State();
     public NPCPuzzleState PuzzleState = new NPCPuzzleState();
     public NPCActivePuzzle ActivePuzzle = new NPCActivePuzzle();
 

@@ -6,7 +6,7 @@ using Ink.Runtime;
 using UnityEngine.EventSystems;
 
 
-// the base for this code was made with the help of https://www.youtube.com/watch?v=vY0Sk93YUhA by Trevor Mock and then built upon by myself
+// the base for the code in this script was made with the help of https://www.youtube.com/watch?v=vY0Sk93YUhA by Trevor Mock and then built upon by myself
 public class DialogueManager : MonoBehaviour
 {
     [Header("Dialogue UI")]
@@ -93,20 +93,7 @@ public class DialogueManager : MonoBehaviour
                 ContinueStory();
             }
         }
-        else
-        {
-            //Debug.Log("making choice");
-            if (choiceMade == true)
-            { 
-                
-                //ContinueStory();
-                /*
-                if (Input.GetKeyDown(KeyCode.Space) && dialogueIsRunning == true)
-                {
-                    ContinueStory();
-                }*/
-            }
-        }
+        
     }
 
     public void StartDialogue(TextAsset inkJSON)
