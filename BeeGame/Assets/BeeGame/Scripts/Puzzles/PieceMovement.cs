@@ -32,6 +32,7 @@ public class PieceMovement : MonoBehaviour
         //{
         if (isMoving == true)
         {
+            isPlaced = false;
             gameObject.GetComponent<Renderer>().sortingOrder = 4;
             Vector3 mousePos;
             mousePos = Input.mousePosition;
@@ -40,14 +41,15 @@ public class PieceMovement : MonoBehaviour
             this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, this.gameObject.transform.localPosition.z);
         }
 
-        if (isPlaced == true)
+        if (isPlaced == true && isMoving == false)
         {
             gameObject.GetComponent<Renderer>().sortingOrder = 2;
         }
         else if (isPlaced == false && isMoving == false)
         {
-            gameObject.GetComponent<Renderer>().sortingOrder = 3;
+            gameObject.GetComponent<Renderer>().sortingOrder = 2;
         }
+
         //}
 
     }

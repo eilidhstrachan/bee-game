@@ -9,6 +9,7 @@ public class GameData
     public float soundVolume;
     public bool mapOn;
     public bool letterRead;
+    public bool demoRead;
     public int puzzlePoints;
     public int mapDisplay; // 1 for village, 2 for suburbs, 3 for city
     public Vector3 playerPosition;
@@ -26,6 +27,7 @@ public class GameData
         musicVolume = 1;
         soundVolume = 1;
         letterRead = false;
+        demoRead = false;
         this.puzzlePoints = 0;
         this.mapDisplay = 1;
         this.playerPosition = new Vector3(2.925f, 0.06f, 0);

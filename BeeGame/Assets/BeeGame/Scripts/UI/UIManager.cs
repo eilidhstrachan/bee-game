@@ -9,6 +9,8 @@ public class UIManager : MonoBehaviour, IDataManagement
     public GameObject mayorLetter;
     public GameObject startText;
     public GameObject mapDisplay;
+    public GameObject demoPopup;
+    public bool isDemoRead;
     public bool isLetterRead;
     public bool isTextRead;
     public bool isMapOn;
@@ -30,6 +32,8 @@ public class UIManager : MonoBehaviour, IDataManagement
     {
         music.volume = musicSlider.value;
         soundEffect.volume = soundSlider.value;
+
+        demoPopup.SetActive(false);
 
         if (mayorLetter.activeInHierarchy == true)
         {
@@ -111,6 +115,16 @@ public class UIManager : MonoBehaviour, IDataManagement
         cityMap.SetActive(true);
         suburbsMap.SetActive(false);
         mapID = 3;
+        if (isDemoRead == false)
+        {
+            demoPopup.SetActive(true);
+            isDemoRead = true;
+        }
+    }
+
+    public void HideDemoPopup()
+    {
+        demoPopup.SetActive(false);
     }
 
     private void OnEnable()
@@ -178,6 +192,7 @@ public class UIManager : MonoBehaviour, IDataManagement
     public void LoadData(GameData data)
     {
         isLetterRead = data.letterRead;
+        isDemoRead = data.demoRead;
         musicSlider.value = data.musicVolume;
         soundSlider.value = data.soundVolume;
         isMapOn = data.mapOn;
@@ -187,6 +202,7 @@ public class UIManager : MonoBehaviour, IDataManagement
     public void SaveData(GameData data)
     {
         data.letterRead = isLetterRead;
+        data.demoRead = isDemoRead;
         data.musicVolume = musicSlider.value;
         data.soundVolume = soundSlider.value;
         data.mapOn = isMapOn;
