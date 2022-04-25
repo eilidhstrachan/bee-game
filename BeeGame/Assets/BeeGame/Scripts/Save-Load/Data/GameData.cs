@@ -7,8 +7,10 @@ public class GameData
 {
     public float musicVolume;
     public float soundVolume;
+    public bool mapOn;
     public bool letterRead;
     public int puzzlePoints;
+    public int mapDisplay; // 1 for village, 2 for suburbs, 3 for city
     public Vector3 playerPosition;
     public SerializeDictionary<int, bool> flowers;
     public SerializeDictionary<int, bool> puzzles;
@@ -20,11 +22,13 @@ public class GameData
     // a previous save file
     public GameData()
     {
+        mapOn = true;
         musicVolume = 1;
         soundVolume = 1;
         letterRead = false;
         this.puzzlePoints = 0;
-        this.playerPosition = Vector3.zero;
+        this.mapDisplay = 1;
+        this.playerPosition = new Vector3(2.925f, 0.06f, 0);
         flowers = new SerializeDictionary<int, bool>();
         npcPuzzle = "";
         puzzles = new SerializeDictionary<int, bool>();

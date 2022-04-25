@@ -4,14 +4,19 @@ using UnityEngine;
 using TMPro;
 using Ink.Runtime;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 
 // the base for the code in this script was made with the help of https://www.youtube.com/watch?v=vY0Sk93YUhA by Trevor Mock and then built upon by myself
 public class DialogueManager : MonoBehaviour
 {
+    [SerializeField] private GameObject mapDisplay;
+    [SerializeField] private Toggle mapToggle;
+
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialogueBox;
     [SerializeField] private TextMeshProUGUI dialogueText;
+    [SerializeField] private GameObject continueText;
     [SerializeField] private GameObject nametag;
 
     [Header("Dialogue Choices UI")]
@@ -57,6 +62,7 @@ public class DialogueManager : MonoBehaviour
         dialogueBox.SetActive(false);
         nametag.SetActive(false);
 
+
         choiceUIText = new TextMeshProUGUI[choices.Length];
 
         foreach (GameObject choice in choices)
@@ -70,10 +76,12 @@ public class DialogueManager : MonoBehaviour
     {
         if (choices[0].activeInHierarchy == true)
         {
+            continueText.SetActive(false);
             makingChoice = true;
         }
         else
         {
+            continueText.SetActive(true);
             makingChoice = false;
         }
 
@@ -82,7 +90,7 @@ public class DialogueManager : MonoBehaviour
             //Debug.Log("Returning");
             return;
         }
-        
+
         // code added so that mouse button can be used to click on the choice UI buttons when choices are active
         if (makingChoice == false)
         {
@@ -102,6 +110,11 @@ public class DialogueManager : MonoBehaviour
         dialogueIsRunning = true;
         dialogueBox.SetActive(true);
         nametag.SetActive(true);
+        continueText.SetActive(true);
+        if (mapDisplay.activeInHierarchy == true)
+        {
+            mapDisplay.SetActive(false);
+        }
 
         dialogueValues.ObserverEnabled(currentItem);
 
@@ -116,6 +129,11 @@ public class DialogueManager : MonoBehaviour
         dialogueBox.SetActive(false);
         dialogueText.text = "";
         nametag.SetActive(false);
+
+        if (mapToggle.isOn == true)
+        {
+            mapDisplay.SetActive(true);
+        }
 
         dialogueValues.ObserverDisabled(currentItem);
     }

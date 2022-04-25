@@ -8,13 +8,21 @@ public class UIManager : MonoBehaviour, IDataManagement
     public GameObject optionsMenu;
     public GameObject mayorLetter;
     public GameObject startText;
+    public GameObject mapDisplay;
     public bool isLetterRead;
     public bool isTextRead;
+    public bool isMapOn;
+    public int mapID;
 
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider soundSlider;
     [SerializeField] AudioSource music;
     [SerializeField] AudioSource soundEffect;
+    [SerializeField] Toggle mapToggle;
+    [SerializeField] GameObject villageMap;
+    [SerializeField] GameObject suburbsMap;
+    [SerializeField] GameObject cityMap;
+
 
 
     // Start is called before the first frame update
@@ -37,6 +45,31 @@ public class UIManager : MonoBehaviour, IDataManagement
         {
             optionsMenu.SetActive(false);
         }
+
+        if (isMapOn == true)
+        {
+            mapToggle.isOn = true;
+            mapDisplay.SetActive(true);
+        }
+        else
+        {
+            mapToggle.isOn = false;
+            mapDisplay.SetActive(false);
+        }
+
+        if (mapID == 1)
+        {
+            DisplayVillageMap();
+        }
+        else if (mapID == 2)
+        {
+            DisplaySuburbsMap();
+        }
+        else if (mapID == 3)
+        {
+            DisplayCityMap();
+        }
+
     }
 
     // Update is called once per frame
@@ -50,6 +83,48 @@ public class UIManager : MonoBehaviour, IDataManagement
         {
             startText.SetActive(true);
         }
+
+    }
+
+    public void DisplayVillageMap()
+    {
+        Debug.Log("ChangeMapImage() is being called");
+        villageMap.SetActive(true);
+        cityMap.SetActive(false);
+        suburbsMap.SetActive(false);
+        mapID = 1;
+    }
+
+    public void DisplaySuburbsMap()
+    {
+        Debug.Log("ChangeMapImage() is being called");
+        villageMap.SetActive(false);
+        cityMap.SetActive(false);
+        suburbsMap.SetActive(true);
+        mapID = 2;
+    }
+
+    public void DisplayCityMap()
+    {
+        Debug.Log("ChangeMapImage() is being called");
+        villageMap.SetActive(false);
+        cityMap.SetActive(true);
+        suburbsMap.SetActive(false);
+        mapID = 3;
+    }
+
+    private void OnEnable()
+    {
+        MapTriggerSuburbs.OnSuburbsEnter += DisplaySuburbsMap;
+        MapTriggerVillage.OnVillageEnter += DisplayVillageMap;
+        MapTriggerCity.OnCityEnter += DisplayCityMap;
+    }
+
+    private void OnDisable()
+    {
+        MapTriggerSuburbs.OnSuburbsEnter -= DisplaySuburbsMap;
+        MapTriggerVillage.OnVillageEnter -= DisplayVillageMap;
+        MapTriggerCity.OnCityEnter -= DisplayCityMap;
     }
 
     public void ChangeMusicVolume()
@@ -61,6 +136,21 @@ public class UIManager : MonoBehaviour, IDataManagement
     {
         soundEffect.volume = soundSlider.value;
     }
+
+    public void DisplayMapUI()
+    {
+        if (mapToggle.isOn == true)
+        {
+            mapDisplay.SetActive(true);
+            isMapOn = true;
+        }
+        else
+        {
+            mapDisplay.SetActive(false);
+            isMapOn = false;
+        }
+    }
+
 
     public void OnStartTextExit()
     {
@@ -90,6 +180,8 @@ public class UIManager : MonoBehaviour, IDataManagement
         isLetterRead = data.letterRead;
         musicSlider.value = data.musicVolume;
         soundSlider.value = data.soundVolume;
+        isMapOn = data.mapOn;
+        mapID = data.mapDisplay;
     }
 
     public void SaveData(GameData data)
@@ -97,5 +189,7 @@ public class UIManager : MonoBehaviour, IDataManagement
         data.letterRead = isLetterRead;
         data.musicVolume = musicSlider.value;
         data.soundVolume = soundSlider.value;
+        data.mapOn = isMapOn;
+        data.mapDisplay = mapID;
     }
 }
