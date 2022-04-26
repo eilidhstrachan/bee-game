@@ -47,7 +47,7 @@ public class PieceMovement : MonoBehaviour
         }
         else if (isPlaced == false && isMoving == false)
         {
-            gameObject.GetComponent<Renderer>().sortingOrder = 2;
+            gameObject.GetComponent<Renderer>().sortingOrder = 3;
         }
 
         //}
@@ -80,8 +80,11 @@ public class PieceMovement : MonoBehaviour
                 OnPiecePlaced?.Invoke();
                 this.transform.position = new Vector3(correspondingSpace[i].transform.position.x, correspondingSpace[i].transform.position.y, correspondingSpace[i].transform.position.z);
                 isPlaced = true;
-
             }
+            //else
+            //{
+             //   isPlaced = false; this code broke the garden puzzle?
+            //}
         }
 
     }

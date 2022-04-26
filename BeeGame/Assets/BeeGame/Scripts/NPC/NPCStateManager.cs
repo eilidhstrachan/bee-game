@@ -12,11 +12,12 @@ public class NPCStateManager : MonoBehaviour, IDataManagement
     public GameObject prompt;
     public TextMeshProUGUI pointsDisplay;
     public bool introsHeard;
+    public bool postPuzzleHeard;
 
     public int npcPoints;
 
     public bool hasPuzzle;
-    private bool puzzleCompleted;
+    public bool puzzleCompleted;
     public string scene = "";
 
     [Header("Ink JSON")]
@@ -24,6 +25,7 @@ public class NPCStateManager : MonoBehaviour, IDataManagement
     public TextAsset inkPart1;
     public TextAsset inkPart2;
     public TextAsset inkPart3;
+    public TextAsset postPuzzle;
     public TextAsset puzzleDialogue;
 
     NPCBaseState currentState;
@@ -35,6 +37,7 @@ public class NPCStateManager : MonoBehaviour, IDataManagement
     public NPCPart3State Part3State = new NPCPart3State();
     public NPCPuzzleState PuzzleState = new NPCPuzzleState();
     public NPCActivePuzzle ActivePuzzle = new NPCActivePuzzle();
+    public NPCPostPuzzleState PostPuzzle = new NPCPostPuzzleState();
 
     // Start is called before the first frame update
     void Start()
@@ -85,7 +88,7 @@ public class NPCStateManager : MonoBehaviour, IDataManagement
         data.npcIntro.TryGetValue(npcID, out introsHeard);
         this.npcPoints = data.puzzlePoints;
         data.puzzles.TryGetValue(npcID, out puzzleCompleted);
-
+        data.postPuzzle.TryGetValue(npcID, out postPuzzleHeard);
     }
 
     public void SaveData(GameData data)
@@ -96,5 +99,12 @@ public class NPCStateManager : MonoBehaviour, IDataManagement
         }
 
         data.npcIntro.Add(npcID, introsHeard);
+
+        if (data.postPuzzle.ContainsKey(npcID))
+        {
+            data.postPuzzle.Remove(npcID);
+        }
+
+        data.postPuzzle.Add(npcID, postPuzzleHeard);
     }
 }

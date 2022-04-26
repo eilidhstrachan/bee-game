@@ -4,12 +4,41 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class FontManager : MonoBehaviour
+public class FontManager : MonoBehaviour, IDataManagement
 {
+    public bool isPixelFontOff;
     public Font readableFont;
     public Font pixelFont;
+    public Toggle fontToggle;
     public TMP_FontAsset tmpReadable;
-    private GameObject[] tmpObjects;
+    public TMP_FontAsset tmpPixel;
+    public List<TextMeshProUGUI> tmpObjects;
+
+    public void Start()
+    {
+        if (isPixelFontOff == true)
+        {
+            fontToggle.isOn = true;
+        }
+        else if (isPixelFontOff == false)
+        {
+            fontToggle.isOn = false;
+        }
+    }
+
+    public void OnToggleChanged()
+    {
+        if (fontToggle.isOn == true)
+        {
+            ChangeToReadableFont();
+            isPixelFontOff = true;
+        }
+        else if (fontToggle.isOn == false)
+        {
+            ChangeToPixelFont();
+            isPixelFontOff = false;
+        }
+    }
 
     public void ChangeToReadableFont()
     {
@@ -17,6 +46,11 @@ public class FontManager : MonoBehaviour
         foreach (var component in textComponents)
         {
             component.font = readableFont;
+        }
+
+        for (int i = 0; i < tmpObjects.Count; i++)
+        {
+            tmpObjects[i].font = tmpReadable;
         }
 
         /*
@@ -43,5 +77,20 @@ public class FontManager : MonoBehaviour
         {
             component.font = pixelFont;
         }
+
+        for (int i = 0; i < tmpObjects.Count; i++)
+        {
+            tmpObjects[i].font = tmpPixel;
+        }
+    }
+
+    public void LoadData(GameData data)
+    {
+        isPixelFontOff = data.pixelFontOff;
+    }
+
+    public void SaveData(GameData data)
+    {
+        data.pixelFontOff = isPixelFontOff;
     }
 }

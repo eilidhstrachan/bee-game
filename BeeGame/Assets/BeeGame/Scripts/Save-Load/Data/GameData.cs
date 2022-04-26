@@ -7,6 +7,7 @@ public class GameData
 {
     public float musicVolume;
     public float soundVolume;
+    public bool pixelFontOff;
     public bool mapOn;
     public bool letterRead;
     public bool demoRead;
@@ -15,6 +16,7 @@ public class GameData
     public Vector3 playerPosition;
     public SerializeDictionary<int, bool> flowers;
     public SerializeDictionary<int, bool> puzzles;
+    public SerializeDictionary<int, bool> postPuzzle;
     public string npcPuzzle;
     public SerializeDictionary<int, bool> npcIntro;
 
@@ -24,6 +26,7 @@ public class GameData
     public GameData()
     {
         mapOn = true;
+        pixelFontOff = false;
         musicVolume = 1;
         soundVolume = 1;
         letterRead = false;
@@ -34,6 +37,7 @@ public class GameData
         flowers = new SerializeDictionary<int, bool>();
         npcPuzzle = "";
         puzzles = new SerializeDictionary<int, bool>();
+        postPuzzle = new SerializeDictionary<int, bool>();
         npcIntro = new SerializeDictionary<int, bool>();
     }
 }

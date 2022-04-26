@@ -79,6 +79,12 @@ public class PuzzleLogic : MonoBehaviour, IDataManagement
                 pointCounter++;
                 Debug.Log("Counter =" + pointCounter);
             }
+            else if (puzzlePieces[i].GetComponent<PieceMovement>().isPlaced == false && toCheck[i] == true)
+            {
+                toCheck[i] = false;
+                pointCounter--;
+                Debug.Log("Counter =" + pointCounter);
+            }
         }
 
     }

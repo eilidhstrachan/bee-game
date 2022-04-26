@@ -1,3 +1,3 @@
 Oh detective, I saw that the garden has some new flowers in it! Not only is it a relief to see some bees back, but hopefully before long I can get some new flower arrangements made!
 Only when there's enough flowers so that me taking a few wouldn't make the garden look all barren again of course. But this is a great start! Thank you, really.
-Hey, your notebook must be filling up now too huh? I better watch out, or you'll be coming for my job next!
+Hey, your scrapbook must be filling up now too huh? I better watch out, or you'll be coming for my job next!

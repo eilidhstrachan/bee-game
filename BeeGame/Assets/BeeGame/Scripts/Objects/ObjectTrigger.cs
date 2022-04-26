@@ -12,7 +12,7 @@ public class ObjectTrigger : MonoBehaviour
     private bool playerInRange;
 
     [Header("Ink JSON")]
-    [SerializeField] private TextAsset BookText;
+    [SerializeField] private TextAsset objectText;
 
     void Awake()
     {
@@ -29,7 +29,7 @@ public class ObjectTrigger : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 tagText.text = name;
-                DialogueManager.GetInstance().StartDialogue(BookText);
+                DialogueManager.GetInstance().StartDialogue(objectText);
                 prompt.SetActive(false);
             }
         }

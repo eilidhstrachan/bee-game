@@ -23,6 +23,10 @@ public class NPCDialogueState : NPCBaseState
         {
             npc.ChangeState(npc.PuzzleState);
         }
+        else if (npc.GetComponent<NPCStateManager>().introsHeard == true && npc.GetComponent<NPCStateManager>().postPuzzleHeard == false && npc.GetComponent<NPCStateManager>().puzzleCompleted == true)
+        {
+            npc.ChangeState(npc.PostPuzzle);
+        }
         else if (npc.GetComponent<NPCStateManager>().introsHeard == true && npc.GetComponent<NPCStateManager>().npcPoints < 2 && npc.GetComponent<NPCStateManager>().hasPuzzle == false)
         {
             npc.ChangeState(npc.Part1State);

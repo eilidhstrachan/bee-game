@@ -29,12 +29,6 @@ public class NPCActivePuzzle : NPCBaseState, IDataManagement
     public override void UpdateState(NPCStateManager npc)
     {
         Debug.Log("Finish = "+ finish);
-       // if (PuzzleLogic.puzzleID == npc.npcID && PuzzleLogic.isComplete == true)
-        //{
-        //    Debug.Log("The npc's puzzle is complete!");
-        //    npc.hasPuzzle = false;
-       // }
-
 
     }
 
