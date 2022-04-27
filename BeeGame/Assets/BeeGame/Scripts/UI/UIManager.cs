@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class UIManager : MonoBehaviour, IDataManagement
 {
     public GameObject optionsMenu;
+    public GameObject scrapbook;
     public GameObject mayorLetter;
     public GameObject startText;
     public GameObject mapDisplay;
@@ -86,6 +88,12 @@ public class UIManager : MonoBehaviour, IDataManagement
         else if (startText.activeInHierarchy == false && isTextRead == true && isLetterRead == false)
         {
             startText.SetActive(true);
+        }
+
+        if (DialogueManager.GetInstance().dialogueIsRunning == true)
+        {
+            scrapbook.SetActive(false);
+            optionsMenu.SetActive(false);
         }
 
     }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.EventSystems;
 
 // piece movement code from https://www.youtube.com/watch?v=uk_E_cGrlQc,
 // Drag and Drop System in Unity - Puzzle Game Example (PC and Mobile) by GameDevel on YouTube
@@ -58,6 +59,12 @@ public class PieceMovement : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            // Check if the mouse was clicked over a UI element
+            if (EventSystem.current.IsPointerOverGameObject())
+            {
+                Debug.Log("Clicked on the UI");
+                return;
+            }
             Vector3 mousePos;
             mousePos = Input.mousePosition;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
@@ -66,6 +73,7 @@ public class PieceMovement : MonoBehaviour
             startPosY = mousePos.y - this.transform.localPosition.y;
 
             isMoving = true;
+
         }
     }
 

@@ -27,11 +27,13 @@ public class NPCPuzzleState : NPCBaseState
         if (!DialogueManager.GetInstance().dialogueIsRunning)
         {
             npc.GetComponent<NPCStateManager>().prompt.SetActive(true);
+            npc.GetComponent<NPCStateManager>().puzzlePrompt.SetActive(true);
             if (Input.GetKeyDown(KeyCode.F))
             {
                 npc.GetComponent<NPCStateManager>().nametagText.text = npc.GetComponent<NPCStateManager>().NPCName;
 
                 npc.GetComponent<NPCStateManager>().prompt.SetActive(false);
+                npc.GetComponent<NPCStateManager>().puzzlePrompt.SetActive(false);
                 DialogueManager.GetInstance().StartDialogue(npc.GetComponent<NPCStateManager>().puzzleDialogue);
                 //if (DialogueManager.GetInstance().GetComponent<DialogueValues>().choice.Equals("yes"))
                 //{
@@ -45,6 +47,7 @@ public class NPCPuzzleState : NPCBaseState
         }
         else
         {
+            npc.GetComponent<NPCStateManager>().puzzlePrompt.SetActive(false);
             npc.GetComponent<NPCStateManager>().prompt.SetActive(false);
         }
     }

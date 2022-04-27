@@ -24,6 +24,10 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
+        else if (app.model.player.book.activeInHierarchy == true)
+        {
+            return;
+        }
 
         app.model.player.rb.MovePosition(app.model.player.rb.position + app.model.player.movement * app.model.player.moveSpeed * Time.fixedDeltaTime);
 

@@ -10,4 +10,5 @@ public class PlayerModel : VillageElement
     public Animator animator;
     public int puzzlePoints;
     public GameObject playerObject;
+    public GameObject book;
 }

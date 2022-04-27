@@ -10,6 +10,7 @@ public class NPCStateManager : MonoBehaviour, IDataManagement
     public bool playerInRange;
     public TextMeshProUGUI nametagText;
     public GameObject prompt;
+    public GameObject puzzlePrompt;
     public TextMeshProUGUI pointsDisplay;
     public bool introsHeard;
     public bool postPuzzleHeard;
@@ -45,6 +46,8 @@ public class NPCStateManager : MonoBehaviour, IDataManagement
         currentState = IdleState;
 
         currentState.EnterState(this);
+
+        puzzlePrompt.SetActive(false);
 
     }
 

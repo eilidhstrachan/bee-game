@@ -18,6 +18,7 @@ public class NPCIdleState : NPCBaseState
         else
         {
             npc.GetComponent<NPCStateManager>().prompt.SetActive(false);
+            npc.GetComponent<NPCStateManager>().puzzlePrompt.SetActive(false);
         }
     }
 }
