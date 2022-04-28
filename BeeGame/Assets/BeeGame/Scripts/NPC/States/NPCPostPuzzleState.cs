@@ -5,6 +5,7 @@ public class NPCPostPuzzleState : NPCBaseState
     public override void EnterState(NPCStateManager npc)
     {
         Debug.Log(npc.GetComponent<NPCStateManager>().NPCName + " has entered the post puzzle state");
+        npc.GetComponent<NPCStateManager>().puzzlePrompt.SetActive(false);
     }
 
     public override void UpdateState(NPCStateManager npc)

@@ -31,15 +31,19 @@ public class PieceMovement : MonoBehaviour
     {
         //if (isPlaced == false) this code makes it so that once a piece is in the right place, it cannot be moved again
         //{
-        if (isMoving == true)
-        {
-            isPlaced = false;
-            gameObject.GetComponent<Renderer>().sortingOrder = 4;
-            Vector3 mousePos;
-            mousePos = Input.mousePosition;
-            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-            this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, this.gameObject.transform.localPosition.z);
+        if (PuzzleLogic.isComplete == false)
+        {
+            if (isMoving == true)
+            {
+                isPlaced = false;
+                gameObject.GetComponent<Renderer>().sortingOrder = 4;
+                Vector3 mousePos;
+                mousePos = Input.mousePosition;
+                mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+
+                this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, this.gameObject.transform.localPosition.z);
+            }
         }
 
         if (isPlaced == true && isMoving == false)
