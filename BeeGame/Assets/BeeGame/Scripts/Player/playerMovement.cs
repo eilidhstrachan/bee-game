@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Old player movement script, replaced with MVC scripts (PlayerModel, PlayerView, PlayerController)
+ */
 public class playerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;

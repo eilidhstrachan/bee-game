@@ -4,8 +4,11 @@ using UnityEngine;
 using TMPro;
 using System;
 
-// acts as a basic trigger for NPCs to start their dialogue. Incorporates some logic to decide which ink dialogue file the NPCs should use based on where the player is in the game
-// such as by using the amount of puzzle points they have collected or the amount of flowers they have collected. 
+/* acts as a basic trigger for NPCs to start their dialogue. Incorporates some logic to decide which ink dialogue file the NPCs should use based on where the player is in the game
+ * such as by using the amount of puzzle points they have collected or the amount of flowers they have collected. 
+ * the base for the code in this script was made with the help of https://www.youtube.com/watch?v=vY0Sk93YUhA by Trevor Mock and then built upon by myself
+ * This class isn't actually used in the final version of the game code. See NPCStateManager for most recent script.
+ */
 public class TriggerDialogue : MonoBehaviour, IDataManagement
 {
     //public static event Action OnPointsIncreased;

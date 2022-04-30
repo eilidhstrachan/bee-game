@@ -4,10 +4,16 @@ using UnityEngine;
 using System;
 using UnityEngine.EventSystems;
 
-// piece movement code from https://www.youtube.com/watch?v=uk_E_cGrlQc,
-// Drag and Drop System in Unity - Puzzle Game Example (PC and Mobile) by GameDevel on YouTube
+/*
+ * This class is for dealing with the movement of puzzle pieces, and also contains some logic for changing the sprite layer and 
+ * deciding if the pieces can be moved or not.
+ * 
+ * the OnMouseUp() and OnMouseDown() code for clicking and dragging game objects is from https://www.youtube.com/watch?v=uk_E_cGrlQc,
+ * Drag and Drop System in Unity - Puzzle Game Example (PC and Mobile) by GameDevel on YouTube
+ */
 public class PieceMovement : MonoBehaviour
 {
+    // action to be invoked when a piece is placed
     public static Action OnPiecePlaced;
 
     private bool isMoving;
@@ -15,7 +21,7 @@ public class PieceMovement : MonoBehaviour
     private float startPosX;
     private float startPosY;
 
-    public float sensitivity;
+    public float sensitivity; // sensitivity is for how close the piece has to be to the right space before it snaps into place
     public List<GameObject> correspondingSpace;
     public bool isPlaced;
 
@@ -29,36 +35,38 @@ public class PieceMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (isPlaced == false) this code makes it so that once a piece is in the right place, it cannot be moved again
-        //{
 
+        // if the puzzle hasn't been completed
         if (PuzzleLogic.isComplete == false)
         {
+            // if the piece is being moved
             if (isMoving == true)
             {
                 isPlaced = false;
-                gameObject.GetComponent<Renderer>().sortingOrder = 4;
+                gameObject.GetComponent<Renderer>().sortingOrder = 4; // set the sprite sorting order to be 4
                 Vector3 mousePos;
-                mousePos = Input.mousePosition;
+                mousePos = Input.mousePosition; // mousePos equals the current position of the mouse cursor
                 mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
+                // moves the piece to the same position as the mouse cursor
                 this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, this.gameObject.transform.localPosition.z);
             }
         }
 
+        // if the piece is in the right place, set its sorting order to 2
         if (isPlaced == true && isMoving == false)
         {
             gameObject.GetComponent<Renderer>().sortingOrder = 2;
         }
         else if (isPlaced == false && isMoving == false)
         {
+            // if the piece isn't moving but isn't in the right place, set the sorting order to 3
             gameObject.GetComponent<Renderer>().sortingOrder = 3;
         }
 
-        //}
-
     }
 
+    // when the mouse button has been clicked on a puzzle piece, move the puzzle piece so the player can drag it across the screen
     public void OnMouseDown()
     {
         if (Input.GetMouseButtonDown(0))
@@ -67,7 +75,7 @@ public class PieceMovement : MonoBehaviour
             if (EventSystem.current.IsPointerOverGameObject())
             {
                 Debug.Log("Clicked on the UI");
-                return;
+                return; // returns so that the pieces can't be picked up through UI elements
             }
             Vector3 mousePos;
             mousePos = Input.mousePosition;
@@ -81,10 +89,12 @@ public class PieceMovement : MonoBehaviour
         }
     }
 
+    // when the player lets go of a piece, check if it is in the right place 
     public void OnMouseUp()
     {
         isMoving = false;
 
+        // if the piece position is very close to the right space, snap it into place and set is placed to true
         for (int i = 0; i < correspondingSpace.Count; i++)
         {
             if (Mathf.Abs(this.transform.localPosition.x - correspondingSpace[i].transform.localPosition.x) <= sensitivity && Mathf.Abs(this.transform.localPosition.y - correspondingSpace[i].transform.localPosition.y) <= sensitivity)

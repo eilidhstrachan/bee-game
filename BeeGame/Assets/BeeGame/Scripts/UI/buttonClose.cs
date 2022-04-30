@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+ * buttonClose hides a UI object when its exit button is pressed
+ */
 public class buttonClose : MonoBehaviour
 {
     public GameObject userInterfaceItem;

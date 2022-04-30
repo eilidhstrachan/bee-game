@@ -9,9 +9,10 @@ public class FileHandler
 {
     private string directoryPath = "";
     private string fileName = "";
-    private readonly string encryptionKey = "sea";
+    private readonly string encryptionKey = "sea"; // encryption key
     private bool encryptionEnabled = false;
 
+    // initialises file handler
     public FileHandler(string directoryPath, string fileName, bool encryptionEnabled)
     {
         this.directoryPath = directoryPath;
@@ -19,6 +20,7 @@ public class FileHandler
         this.encryptionEnabled = encryptionEnabled;
     }
 
+    // the save method tries to save game data to the given file path
     public void Save(GameData data)
     {
         string path = Path.Combine(directoryPath, fileName);
@@ -47,6 +49,7 @@ public class FileHandler
         }
     }
 
+    // the load method tries to load data from the given file path
     public GameData Load()
     {
         GameData loadData = null;
@@ -77,6 +80,7 @@ public class FileHandler
         return loadData;
     }
 
+    // this method encrypts the save data to make it less readable 
     private string Encryption(string data)
     {
         string encryptedData = "";

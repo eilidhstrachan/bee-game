@@ -4,8 +4,12 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
+/*
+ * FontManager allows the player to change between the pixel font and the dyslexia friendly font
+ */
 public class FontManager : MonoBehaviour, IDataManagement
 {
+    // variables to show in inspector
     public bool isPixelFontOff;
     public Font readableFont;
     public Font pixelFont;
@@ -14,6 +18,7 @@ public class FontManager : MonoBehaviour, IDataManagement
     public TMP_FontAsset tmpPixel;
     public List<TextMeshProUGUI> tmpObjects;
 
+    // initialises the font types
     public void Start()
     {
         if (isPixelFontOff == true)
@@ -26,8 +31,10 @@ public class FontManager : MonoBehaviour, IDataManagement
         }
     }
 
+    // when the toggle value changes
     public void OnToggleChanged()
     {
+        // if toggle is on, set font to the readable font
         if (fontToggle.isOn == true)
         {
             ChangeToReadableFont();
@@ -35,11 +42,13 @@ public class FontManager : MonoBehaviour, IDataManagement
         }
         else if (fontToggle.isOn == false)
         {
+            // if toggle is off, change to the pixel style font
             ChangeToPixelFont();
             isPixelFontOff = false;
         }
     }
 
+    // changes all text and tmp objects font to be the readable font
     public void ChangeToReadableFont()
     {
         var textComponents = Component.FindObjectsOfType<Text>(true);
@@ -53,6 +62,8 @@ public class FontManager : MonoBehaviour, IDataManagement
             tmpObjects[i].font = tmpReadable;
         }
 
+
+        // the commented out code was an attempt at getting all the tmp text objects through the code rather than the inspector, but it didn't work
         /*
         tmpObjects = GameObject.FindGameObjectsWithTag("TextMesh");
         foreach (GameObject tmp in tmpObjects)
@@ -70,6 +81,7 @@ public class FontManager : MonoBehaviour, IDataManagement
         }*/
     }
 
+    // changes all text and tmp objects font to be the pixel font
     public void ChangeToPixelFont()
     {
         var textComponents = Component.FindObjectsOfType<Text>(true);
@@ -84,11 +96,13 @@ public class FontManager : MonoBehaviour, IDataManagement
         }
     }
 
+    // loads font type from gamedata file
     public void LoadData(GameData data)
     {
         isPixelFontOff = data.pixelFontOff;
     }
 
+    // saves selected font type to gamedata file
     public void SaveData(GameData data)
     {
         data.pixelFontOff = isPixelFontOff;

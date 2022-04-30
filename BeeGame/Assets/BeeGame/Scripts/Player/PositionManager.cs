@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * This class lets the player's position be saved to the gamedata file, so that 
+ * when the game is exited or a new scene is loaded, the player's position will
+ * be remembered.
+ */
 public class PositionManager : MonoBehaviour, IDataManagement
 {
 

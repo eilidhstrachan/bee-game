@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * GameData holds all data related to the current game
+ */
 [System.Serializable]
 public class GameData
 {
@@ -27,13 +30,13 @@ public class GameData
     {
         mapOn = true;
         pixelFontOff = false;
-        musicVolume = 1;
-        soundVolume = 1;
-        letterRead = false;
+        musicVolume = 1; // sets volume to maximum value
+        soundVolume = 1; // sets volume to maximum value
+        letterRead = false; // letterread is false so the letter can be displaed at the start of the game
         demoRead = false;
         this.puzzlePoints = 0;
         this.mapDisplay = 1;
-        this.playerPosition = new Vector3(2.925f, 0.06f, 0);
+        this.playerPosition = new Vector3(2.925f, 0.06f, 0); // the starting position for a new game
         flowers = new SerializeDictionary<int, bool>();
         npcPuzzle = "";
         puzzles = new SerializeDictionary<int, bool>();

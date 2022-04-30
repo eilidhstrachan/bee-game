@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
+/*
+ * Handles all the UI options while in the overworld scene
+ */
 public class UIManager : MonoBehaviour, IDataManagement
 {
     public GameObject optionsMenu;
@@ -52,6 +55,7 @@ public class UIManager : MonoBehaviour, IDataManagement
             optionsMenu.SetActive(false);
         }
 
+        // shows/hides the map 
         if (isMapOn == true)
         {
             mapToggle.isOn = true;
@@ -63,6 +67,7 @@ public class UIManager : MonoBehaviour, IDataManagement
             mapDisplay.SetActive(false);
         }
 
+        // chooses which map image to display
         if (mapID == 1)
         {
             DisplayVillageMap();
@@ -81,15 +86,17 @@ public class UIManager : MonoBehaviour, IDataManagement
     // Update is called once per frame
     void Update()
     {
+        // shows the mayor letter if it hasn't already been read
         if (mayorLetter.activeInHierarchy == false && isTextRead == false && isLetterRead == false)
         {
             mayorLetter.SetActive(true);
         }
         else if (startText.activeInHierarchy == false && isTextRead == true && isLetterRead == false)
         {
-            startText.SetActive(true);
+            startText.SetActive(true); // shows the start text if it hasn't already been read
         }
 
+        // hides scrapbook and options menu while dialogue is being displayed
         if (DialogueManager.GetInstance().dialogueIsRunning == true)
         {
             scrapbook.SetActive(false);
@@ -135,6 +142,7 @@ public class UIManager : MonoBehaviour, IDataManagement
         demoPopup.SetActive(false);
     }
 
+    // observer pattern, calls related map display methods to change map image
     private void OnEnable()
     {
         MapTriggerSuburbs.OnSuburbsEnter += DisplaySuburbsMap;
@@ -142,6 +150,7 @@ public class UIManager : MonoBehaviour, IDataManagement
         MapTriggerCity.OnCityEnter += DisplayCityMap;
     }
 
+    // disables observers
     private void OnDisable()
     {
         MapTriggerSuburbs.OnSuburbsEnter -= DisplaySuburbsMap;
@@ -159,6 +168,7 @@ public class UIManager : MonoBehaviour, IDataManagement
         soundEffect.volume = soundSlider.value;
     }
 
+    // displays the map UI if the toggle is set to on
     public void DisplayMapUI()
     {
         if (mapToggle.isOn == true)
@@ -173,13 +183,14 @@ public class UIManager : MonoBehaviour, IDataManagement
         }
     }
 
-
+    // when start text is closed, set it to be read
     public void OnStartTextExit()
     {
         startText.SetActive(false);
         isLetterRead = true;
     }
 
+    // when the letter is closed, set it to be read
     public void OnLetterExit()
     {
         mayorLetter.SetActive(false);
@@ -197,6 +208,7 @@ public class UIManager : MonoBehaviour, IDataManagement
         optionsMenu.SetActive(false);
     }
 
+    // load all related UI data from gamedata
     public void LoadData(GameData data)
     {
         isLetterRead = data.letterRead;
@@ -207,6 +219,7 @@ public class UIManager : MonoBehaviour, IDataManagement
         mapID = data.mapDisplay;
     }
 
+    // save all related UI data to gamedata
     public void SaveData(GameData data)
     {
         data.letterRead = isLetterRead;

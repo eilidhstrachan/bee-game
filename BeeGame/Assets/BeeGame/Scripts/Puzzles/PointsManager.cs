@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+// script to hold the value of the player's puzzle point count so it can be accessed by other scripts
 public class PointsManager : MonoBehaviour, IDataManagement
 {
     public static int playerPoints;

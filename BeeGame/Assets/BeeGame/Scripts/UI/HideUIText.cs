@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+/*
+ * code not actually used as I didn't realise you can simply change the order of UI objects in the Unity hierarchy 
+ */
 public class HideUIText : MonoBehaviour
 {
     public GameObject objectToShow;

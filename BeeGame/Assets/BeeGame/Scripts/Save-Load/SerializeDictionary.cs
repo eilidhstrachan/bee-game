@@ -4,6 +4,7 @@ using UnityEngine;
 
 
 // code is from How to make a Save & Load System in Unity | 2022 https://www.youtube.com/watch?v=aUi9aijvpg by Trevor Mock
+// serialises the dictionary values so that they can be saved to and loaded from the gamedata file
 [System.Serializable]
 public class SerializeDictionary<TKey, TValue> : Dictionary<TKey, TValue>, ISerializationCallbackReceiver
 {

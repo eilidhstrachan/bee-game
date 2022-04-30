@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/*
+ * Code to display puzzle scene, I think this was just for testing purposes and isn't actually included
+ * in the final build of the game.
+ */
 public class DisplayPuzzle : MonoBehaviour
 {
     private bool playerInRange;

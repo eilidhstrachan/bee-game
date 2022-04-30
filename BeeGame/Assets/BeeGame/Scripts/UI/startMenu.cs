@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/*
+ * This script handles all the different buttons and options in the 
+ * StartMenu scene.
+ */
 public class startMenu : MonoBehaviour, IDataManagement
 {
     public GameObject startForm;
@@ -49,41 +53,42 @@ public class startMenu : MonoBehaviour, IDataManagement
 
     public void StartGame()
     {
-        startForm.SetActive(true);
+        startForm.SetActive(true); // displays the start form
     }
 
     public void NewGame()
     {
-        SaveDataManager.instance.NewGame();
-        SceneManager.LoadScene("Village");
+        SaveDataManager.instance.NewGame(); // starts a new game
+        SceneManager.LoadScene("Village"); // loads the "Village" overworld scene
     }
 
     public void LoadGame()
     {
-        SaveDataManager.instance.LoadGame();
-        SceneManager.LoadScene("Village");
+        SaveDataManager.instance.LoadGame(); // loads previous game data
+        SceneManager.LoadScene("Village"); // loads the "Village" overworld scene
     }
 
     public void Instructions()
     {
-        instructions.SetActive(true);
+        instructions.SetActive(true); // shows the instructions
     }
 
     public void ShowOptions()
     {
-        options.SetActive(true);
+        options.SetActive(true); // shows the options menu
     }
 
     public void Credits()
     {
-        credits.SetActive(true);
+        credits.SetActive(true); // shows the credits
     }
 
     public void Quit()
     {
-        Application.Quit();
+        Application.Quit(); // quits the application
     }
 
+    // closes the start form
     public void CloseStartForm()
     {
         if (startForm.activeInHierarchy == true)
@@ -92,6 +97,7 @@ public class startMenu : MonoBehaviour, IDataManagement
         }
     }
 
+    // closes the instructions
     public void CloseInstructions()
     {
         if (instructions.activeInHierarchy == true)
@@ -100,6 +106,7 @@ public class startMenu : MonoBehaviour, IDataManagement
         }
     }
 
+    // closes the options menu
     public void CloseOptions()
     {
         if (options.activeInHierarchy == true)
@@ -108,6 +115,7 @@ public class startMenu : MonoBehaviour, IDataManagement
         }
     }
 
+    // closes the credits
     public void CloseCredits()
     {
         if (credits.activeInHierarchy == true)
@@ -116,11 +124,13 @@ public class startMenu : MonoBehaviour, IDataManagement
         }
     }
 
+    // sets the music volume to the value of the slider
     public void ChangeMusicVolume()
     {
         music.volume = musicSlider.value;
     }
 
+    // gets the current value of the toggle
     public void GetToggleValue()
     {
         if (mapToggle.isOn == true)
