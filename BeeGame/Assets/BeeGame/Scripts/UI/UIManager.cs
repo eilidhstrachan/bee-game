@@ -105,6 +105,7 @@ public class UIManager : MonoBehaviour, IDataManagement
 
     }
 
+    // displays the image of the village map
     public void DisplayVillageMap()
     {
         Debug.Log("ChangeMapImage() is being called");
@@ -114,6 +115,7 @@ public class UIManager : MonoBehaviour, IDataManagement
         mapID = 1;
     }
 
+    // displays the image of the suburbs map
     public void DisplaySuburbsMap()
     {
         Debug.Log("ChangeMapImage() is being called");
@@ -123,13 +125,16 @@ public class UIManager : MonoBehaviour, IDataManagement
         mapID = 2;
     }
 
+    // displays the image of the city map
     public void DisplayCityMap()
     {
         Debug.Log("ChangeMapImage() is being called");
         villageMap.SetActive(false);
         cityMap.SetActive(true);
         suburbsMap.SetActive(false);
-        mapID = 3;
+        mapID = 3; 
+        
+        // the first time the player enters the city, display the "end of demo" message
         if (isDemoRead == false)
         {
             demoPopup.SetActive(true);
